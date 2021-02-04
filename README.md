@@ -1,5 +1,5 @@
 # oc20b
-![tree](img/rectangle)
+![tree](img/tree.jpg)
 # Titre 1
 ## Tutorial
 *
