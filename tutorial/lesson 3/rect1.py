@@ -9,7 +9,7 @@ pygame.init()
 screen = pygame.display.set_mode(SIZE)
 
 rect = Rect(50, 160, 80, 80)
-r2 = Rect(200, 200, 100, 100)
+r2 = Rect(200, 200, 100, 200)
 print(rect)
 
 print(f'x={rect.x}, y={rect.y}, w={rect.w}, h={rect.h}')
