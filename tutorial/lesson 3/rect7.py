@@ -11,10 +11,10 @@ while running:
         elif event.type == MOUSEBUTTONDOWN:
             if rect.collidepoint(event.pos):
                 moving = True
-
+                
         elif event.type == MOUSEBUTTONUP:
             moving = False
-
+            
         elif event.type == MOUSEMOTION and moving:
             rect.move_ip(event.rel)
     

@@ -23,3 +23,4 @@ pygame.init()
 screen = pygame.display.set_mode((width, height))
 font = pygame.font.Font(None, 24)
 running = True
+
