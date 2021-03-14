@@ -11,7 +11,7 @@ while running:
             if event.key == K_l:
                 rect.left = 0
             if event.key == K_c:
-                rect.centerx = width//2
+                rect.centerx = width//10
             if event.key == K_r:
                 rect.right = width
 
