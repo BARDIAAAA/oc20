@@ -17,8 +17,6 @@ Notre éditeur peut faire plusieurs choses :
 ## Interface
 ![birdblue](img/birdblue.png)
 
-![birdwhite](img/birdwhite.png)
-
 ## Raccourcis Clavier
 * N = Faire bouger ou freeze l'image
 * Z = Undo
