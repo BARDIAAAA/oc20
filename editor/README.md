@@ -15,7 +15,6 @@ Notre éditeur peut faire plusieurs choses :
 * Changement de couleurs du background
 
 ## Interface
-
 ![birdblue](img/birdblue.png)
 
 ## Raccourcis Clavier
