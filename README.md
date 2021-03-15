@@ -1,5 +1,4 @@
 ## oc20 - Projet Editor
-![bird](img/bird.png)
 
 ## Introduction
 L'éditeur graphique permet de :
