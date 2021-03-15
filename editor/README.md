@@ -17,14 +17,14 @@ Notre éditeur peut faire plusieurs choses :
 ## Interface
 ![birdblue](img/birdblue.png)
 
-## Raccourcis Clavier
-* N = Faire bouger ou freeze l'image
-* Z = Undo
-* Y = Redo
-* W = Passer le background en WHITE
-* V = Passer le background en GREEN
-* R = Passer le background en RED
-* B = Passer le background en BLUE
+__## Raccourcis Clavier__
+* **N =** Faire bouger ou freeze l'image
+* **Z =** Undo
+* **Y =** Redo
+* **W =** Passer le background en WHITE
+* **V =** Passer le background en GREEN
+* **R =** Passer le background en RED
+* **B =** Passer le background en BLUE
 
 ## Manipulations avec la souris
 * Maintenir le clique et le relâcher pour créer un segment, ceci est seulement possible si l'image est freeze via la touche "N". Pour faire bouger l'image, represser sur la touche "N" et effectuer un mouvement via la souris
