@@ -28,6 +28,6 @@ Notre éditeur peut faire plusieurs choses :
 * B = Passer le background en BLUE
 
 ## Manipulations avec la souris
-* Maintenir le clique et le relâcher pour créer un segment, ceci est seulement possible si l'image est freeze via la touche "N". Pour faire bouger l'image, presser sur la touche "N" et effectuer un mouvement via la souris
+* Maintenir le clique et le relâcher pour créer un segment, ceci est seulement possible si l'image est freeze via la touche "N". Pour faire bouger l'image, represser sur la touche "N" et effectuer un mouvement via la souris
 
 ## Conclusion
