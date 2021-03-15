@@ -1,14 +1,14 @@
 ## oc20 - Projet Editor
 
 ## Introduction
-L'éditeur graphique permet de :
+*L'éditeur graphique permet de :*
 * permet de manipuler des objets (rectangles, cercles, lignes, images)
 * permet de choisir les couleurs et les épaisseurs
 * permet de créer, déplacer, supprimer des objets
 * permet de sauvegarder/charger un dessin
 
 ## Description
-Notre éditeur peut faire plusieurs choses : 
+*Notre éditeur peut faire plusieurs choses :*
 * Créer des segments 
 * Les supprimer / rajouter
 * Bouger l'image à l'appui d'une macro
