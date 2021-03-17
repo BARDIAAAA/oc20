@@ -15,7 +15,7 @@
 * Changement de couleurs du background
 
 ## Interface
-![birdblue](editor/birdblue.png)
+![birdblue](img/birdblue.png)
 
 ## Raccourcis Clavier
 * **N =** Faire bouger ou freeze l'image
