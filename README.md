@@ -11,7 +11,7 @@
 *Notre éditeur peut faire plusieurs choses :*
 * Créer des segments 
 * Les supprimer / rajouter
-* Bouger l'image à l'appui d'une macro
+* Bouger l'image à l'appui de différentes touches
 * Changement de couleurs du background
 
 ## Interface
