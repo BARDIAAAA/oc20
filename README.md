@@ -11,7 +11,7 @@
 *Notre éditeur peut faire plusieurs choses :*
 * Créer des segments 
 * Les supprimer / rajouter
-* Bouger l'image à l'appui d'une macro
+* Bouger l'image à l'appui de différentes touches
 * Changement de couleurs du background
 
 ## Interface
@@ -21,12 +21,19 @@
 * **N =** Faire bouger ou freeze l'image
 * **Z =** Undo
 * **Y =** Redo
+* **K =** Recentrer l'image
 * **W =** Passer le background en WHITE
 * **V =** Passer le background en GREEN
 * **R =** Passer le background en RED
 * **B =** Passer le background en BLUE
+* **G =** Passer le background en GRIS
+* **Flèche du Haut =** Déplace l'image vers le haut
+* **Flèche du Bas =** Déplace l'image vers le bas
+* **Flèche de Droite =** Déplace l'image vers la droite
+* **Flèche de Gauche =** Déplace l'image vers la gauche
 
 ## Manipulations avec la souris
 *Maintenir le clique et le relâcher pour créer un segment, ceci est seulement possible si l'image est freeze via la touche "N". Pour faire bouger l'image, represser sur la touche "N" et effectuer un mouvement via la souris*
 
 ## Conclusion
+Le but de ce travail a été atteint. La prochaine étape consistera a utiliser cet éditeur graphique pour créer un jeu basé sur le type *tower defense*.  
