@@ -8,7 +8,7 @@
 
 ## Les classes :
 * ***Paths :** classe où se trouvent toutes les images nécessaires au bon fonctionnement du jeu (Fantômes / Pac-Man), mais également la police.*
-* ***Colors :** classe où se trouve toutes les couleurs dont nous aurons besoin, classe très basique.*
+* ***Colors :** classe où se trouvent toutes les couleurs dont nous aurons besoin, classe très basique.*
 * ***Game :** classe dérive d'une fonction qui va lancer le jeu (start).*
 * ***Wall :** classe qui va créer les murs.*
 * ***Food :** classe qui va générer la nourriture de Pac-Man, celle qui va nous permettre d'éventuellement gagner la partie.*
