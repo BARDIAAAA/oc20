@@ -10,7 +10,7 @@
 ![](win.png)
 ![](lose.png)
 
-## Les classes :
+## Les classes (structure interne de notre jeu) :
 * ***Paths :** classe où se trouvent toutes les images nécessaires au bon fonctionnement du jeu (Fantômes / Pac-Man), mais également la police.*
 * ***Colors :** classe où se trouve toutes les couleurs dont nous aurons besoin, classe très basique.*
 * ***Game :** classe dérive d'une fonction qui va lancer le jeu (start).*
@@ -20,3 +20,9 @@
 * ***Level1 :** classe qui va lancer le premier niveau (seul et unique niveau **pour l'instant**).*
 
 ![](schémas.png)
+
+## Amélioration à prevoir sur Pac-Man :
+*La plus grande partie de Pac-Man a été faite, mais il manque encore deux trois détails à rajouter pour rendre le jeu parfait, comme par exemple le fait que Pac-Man puisse manger une petite boule qui lui donne la possibilité de manger les fantômes pendant quelques secondes. Également le fait d'ajouter un deuxième niveau (en plus du premier que nous avons déjà) avec comme unique ajout, un fantôme en plus qui rendrait la victoire encore plus compliquée.*
+
+## Amélioration à prévoir sur l'ensemble de notre projet :
+*J'ai pris longtemps à trouver le jeu que je voulais choisir pour ce projet mais j'ai eu par la suite l'idée de réunir plusieurs jeux étant donné que le choix initial était compliqué. Pourquoi pas créer un menu qui nous permettrais de choisir le jeu auquel on souhaiterait jouer. Cela rendrait le projet encore plus complet avec des choix de jeu encore plus varié. Ajouter une musique qui rentre dans l'univers du jeu vidéo pour que l'immersion soit encore plus poussée.
