@@ -21,6 +21,7 @@ class Colors:
         self.WHITE = (255, 255, 255)
         self.GREEN = (0, 255, 0)
         self.YELLOW = (255, 255, 0)
+        self.GREY = (128,128,128)
 
 class Game:
     def __init__(self):
@@ -30,13 +31,13 @@ class Game:
         self.clock = pygame.time.Clock()
 
     def start(self, level, screen, font):
-        walls = level.setupWalls(self.color.GREEN)
+        walls = level.setupWalls(self.color.WHITE)
         gate = level.setupGate(self.color.WHITE)
         heroes, ghost_sprites = level.setupPlayers(
             self.path.PACMAN,
             [self.path.BLINKY, self.path.CLYDE, self.path.INKY, self.path.PINKY]
         )
-        foods = level.setupFood(self.color.YELLOW, self.color.WHITE)
+        foods = level.setupFood(self.color.GREY, self.color.WHITE)
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
