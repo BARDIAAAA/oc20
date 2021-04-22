@@ -22,6 +22,8 @@ class Colors:
         self.GREEN = (0, 255, 0)
         self.YELLOW = (255, 255, 0)
         self.GREY = (128,128,128)
+        self.GOLD = (255,215,0)
+        self.BLUE = (65,105,225)
 
 class Game:
     def __init__(self):
@@ -32,7 +34,7 @@ class Game:
 
     def start(self, level, screen, font):
         walls = level.setupWalls(self.color.WHITE)
-        gate = level.setupGate(self.color.WHITE)
+        gate = level.setupGate(self.color.BLACK)
         heroes, ghost_sprites = level.setupPlayers(
             self.path.PACMAN,
             [self.path.BLINKY, self.path.CLYDE, self.path.INKY, self.path.PINKY]
