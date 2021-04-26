@@ -7,7 +7,7 @@ import levels as levels
 class Paths:
     def __init__(self):
         self.ICON = os.path.join(os.getcwd(), 'resources/images/pacman.png')
-        self.FONT = os.path.join(os.getcwd(), 'resources/font/raleway-black.ttf')
+        self.FONT = os.path.join(os.getcwd(), 'resources/font/arcade.ttf')
         self.PACMAN = os.path.join(os.getcwd(), 'resources/images/pacman.png')
         self.BLINKY = os.path.join(os.getcwd(), 'resources/images/Blinky.png')
         self.CLYDE = os.path.join(os.getcwd(), 'resources/images/Clyde.png')
@@ -20,9 +20,8 @@ class Colors:
         self.BLACK = (0, 0, 0)
         self.WHITE = (255, 255, 255)
         self.GREEN = (0, 255, 0)
-        self.YELLOW = (255, 255, 0)
         self.GREY = (128,128,128)
-        self.GOLD = (255,215,0)
+        self.YELLOW = (255,215,0)
         self.BLUE = (65,105,225)
 
 class Game:
@@ -33,13 +32,13 @@ class Game:
         self.clock = pygame.time.Clock()
 
     def start(self, level, screen, font):
-        walls = level.setupWalls(self.color.WHITE)
+        walls = level.setupWalls(self.color.BLUE)
         gate = level.setupGate(self.color.BLACK)
         heroes, ghost_sprites = level.setupPlayers(
             self.path.PACMAN,
             [self.path.BLINKY, self.path.CLYDE, self.path.INKY, self.path.PINKY]
         )
-        foods = level.setupFood(self.color.GREY, self.color.WHITE)
+        foods = level.setupFood(self.color.YELLOW, self.color.WHITE)
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -96,7 +95,7 @@ class Game:
                     ghost.changeSpeed(ghost.tracks[loc0][0: 2])
                 ghost.update(walls, None)
             ghost_sprites.draw(screen)
-            score_text = font.render("Score: %s" % self.score, True, self.color.WHITE)
+            score_text = font.render("Score:%s" % self.score, True, self.color.WHITE)
             screen.blit(score_text, [10, 10])
             if len(foods) == 0:
                 is_clearance = True
@@ -111,15 +110,15 @@ class Game:
 
 def showText(screen, font, is_clearance, flag=False):
     clock = pygame.time.Clock()
-    msg = 'Vous avez perdu !' if not is_clearance else 'Bravo, vous avez gagné !'
-    positions = [[235, 233], [65, 303], [170, 333]] if not is_clearance else [[145, 233], [65, 303], [170, 333]]
+    msg = 'Vous avez perdu.' if not is_clearance else 'Vous avez gagné !'
+    positions = [[175, 233], [35, 303], [53, 333]] if not is_clearance else [[145, 233], [65, 303], [170, 333]]
     surface = pygame.Surface((400, 200))
     surface.set_alpha(10)
     surface.fill((128, 128, 128))
     screen.blit(surface, (100, 200))
     texts = [font.render(msg, True, Colors().WHITE),
-             font.render('Appuyez sur ENTRER pour rejouer.', True, Colors().WHITE),
-             font.render('Appuyez sur ECHAP pour quitter.', True, Colors().WHITE)]
+             font.render('Appuyez sur ENTER pour rejouer.', True, Colors().WHITE),
+             font.render('Appuyez sur ESC pour quitter.', True, Colors().WHITE)]
     while True:
         for event in pygame.event.get():
             if event.type == pygame.KEYDOWN:
@@ -144,14 +143,14 @@ def initialize():
     icon_image = pygame.image.load(Paths().ICON)
     pygame.display.set_icon(icon_image)
     screen = pygame.display.set_mode([606, 606])
-    pygame.display.set_caption('Pacman —— Bardia')
+    pygame.display.set_caption('Pac-Man')
     return screen
 
 
 def main(screen):
     pygame.font.init()
-    font_small = pygame.font.Font(Paths().FONT, 18)
-    font_big = pygame.font.Font(Paths().FONT, 24)
+    font_small = pygame.font.Font(Paths().FONT, 15)
+    font_big = pygame.font.Font(Paths().FONT, 18)
     for num_level in range(1, levels.NUMLEVELS + 1):
         level = getattr(levels, f'Level{num_level}')()
         is_clearance = Game().start(level, screen, font_small)
