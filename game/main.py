@@ -3,7 +3,6 @@ import sys
 import pygame
 import levels as levels
 
-
 class Paths:
     def __init__(self):
         self.ICON = os.path.join(os.getcwd(), 'resources/images/pacman.png')
@@ -158,6 +157,5 @@ def main(screen):
             showText(screen, font_big, is_clearance, True)
         else:
             showText(screen, font_big, is_clearance)
-
-
+            
 main(initialize())
