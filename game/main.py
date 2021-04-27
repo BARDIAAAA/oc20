@@ -3,6 +3,7 @@ import sys
 import pygame
 import levels as levels
 
+
 class Paths:
     def __init__(self):
         self.ICON = os.path.join(os.getcwd(), 'resources/images/pacman.png')
@@ -12,7 +13,6 @@ class Paths:
         self.CLYDE = os.path.join(os.getcwd(), 'resources/images/Clyde.png')
         self.INKY = os.path.join(os.getcwd(), 'resources/images/Inky.png')
         self.PINKY = os.path.join(os.getcwd(), 'resources/images/Pinky.png')
-
 
 class Colors:
     def __init__(self):
