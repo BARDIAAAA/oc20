@@ -159,5 +159,10 @@ def main(screen):
             showText(screen, font_big, is_clearance, True)
         else:
             showText(screen, font_big, is_clearance)
-            
+
+pygame.mixer.init()
+pygame.mixer.music.load("pac-man.mp3")
+pygame.mixer.music.play(-1)
+pygame.mixer.music.set_volume(0.05)
+
 main(initialize())
