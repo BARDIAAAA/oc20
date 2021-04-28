@@ -8,9 +8,11 @@
 
 ![](map_1.png)
 
-*Vous pouvez voir ci-dessus ce que vous allez voir apparaître en lancant le fichier principal (main.py), c'est un pac-man très simple dans le sens où c'est celui que nous connaissons tous, mais je trouve que rester dans la simplicité et dans les origines du jeu est la meilleure chose à faire lorsqu'on reproduit celui-ci via Pygame.*
+*Vous pouvez visualiser ci-dessus ce que vous allez voir apparaître en lancant le fichier principal (main.py), c'est un Pac-Man très simple au niveau de la map dans le sens où c'est celui que nous connaissons tous, mais nous trouvions que rester dans la simplicité et dans les origines même du jeu est la meilleure chose à faire lorsque nous reproduisons celui-ci via Pygame.*
 
 ![](lose_1.png)
+
+*Cette deuxième image de notre Pac-Man montre la vue que vous aurez lorsque votre partie sera perdue. Utilisez une police typée "Arcade" nous semblait indispensable pour rester sur les origines du jeu et oublier que celui-ci a été reproduit en 2021. L'histoire du jeu est en quelque sorte son ADN donc il n'était pas envisageable pour nous de lui retirer quelque chose d'aussi important.*
 
 ![](win_1.png)
 
