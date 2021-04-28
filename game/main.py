@@ -31,6 +31,8 @@ class Game:
         self.path = Paths()
         self.score = 0
         self.clock = pygame.time.Clock()
+        self.music = True
+        self.volume = 0.1
 
     def start(self, level, screen, font):
         walls = level.setupWalls(self.color.PURPLE)
@@ -63,10 +65,14 @@ class Game:
                             hero.is_move = True
                         
                         elif event.key == pygame.K_o:
-                            pygame.mixer.music.pause()
-                            
-                        elif event.key == pygame.K_l:
-                            pygame.mixer.music.unpause()
+                            if self.music == True:
+                                self.music = False
+                                pygame.mixer.music.pause()
+                            else:
+                                self.music = True
+                                pygame.mixer.music.unpause()
+                        
+                        
 
                     if event.type == pygame.KEYUP:
                         if (event.key == pygame.K_LEFT) or (event.key == pygame.K_RIGHT) or \
@@ -108,7 +114,11 @@ class Game:
                 ghost.update(walls, None)
             ghost_sprites.draw(screen)
             score_text = font.render("Score:%s" % self.score, True, self.color.WHITE)
-            screen.blit(score_text, [10, 10])
+            music_msg = 'ON' if self.music == True else 'OFF'
+            music_position = [450, 613] if self.music == True else [435, 613]
+            music_text = font.render("Musique:%s" % music_msg, True, self.color.WHITE)
+            screen.blit(score_text, [10, 613])
+            screen.blit(music_text, music_position)
             if len(foods) == 0:
                 is_clearance = True
                 break
@@ -152,7 +162,7 @@ def initialize():
     pygame.init()
     icon_image = pygame.image.load(Paths().ICON)
     pygame.display.set_icon(icon_image)
-    screen = pygame.display.set_mode([606, 606])
+    screen = pygame.display.set_mode([606, 636])
     pygame.display.set_caption('Pac-Man')
     return screen
 
@@ -169,8 +179,8 @@ def main(screen):
             showText(screen, font_big, is_clearance)
             
 pygame.mixer.init()
-pygame.mixer.music.load("pac-man.mp3")
+pygame.mixer.music.load("pac-man-theme.wav")
 pygame.mixer.music.play(-1)
-pygame.mixer.music.set_volume(0.025)
+pygame.mixer.music.set_volume(0.1)
 
 main(initialize())
