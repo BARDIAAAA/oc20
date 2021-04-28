@@ -6,10 +6,6 @@
 ## Comment jouer ?
 *C'est un jeu qui est très simple au niveau de sa compréhension. Pour jouer au jeu, vous devrez utiliser les quatres flèches que vous avez sur votre clavier pour faire bouger Pac-Man. La flèche du haut le fait monter, celle du bas le fait descendre, celle de gauche le fait tourner à gauche et celle de droite, au contraire, le fait tourner à droite. Dans le cas où vous gagnez la partie ou que vous la perdez, deux possibilités s'offrent à vous, soit de refaire une partie en appuyant sur "ENTRER", soit de quitter le jeu en appuyant sur "ESC".*
 
-![](map.png)
-![](win.png)
-![](lose.png)
-
 ## Les classes (structure interne de notre jeu)
 * ***Paths :** classe où se trouvent toutes les images nécessaires au bon fonctionnement du jeu (Fantômes / Pac-Man), mais également la police.*
 * ***Colors :** classe où se trouvent toutes les couleurs dont nous aurons besoin, classe très basique.*
@@ -18,8 +14,6 @@
 * ***Food :** classe qui va générer la nourriture de Pac-Man, celle qui va nous permettre d'éventuellement gagner la partie.*
 * ***Player :** classe qui va créer toutes les entités.*
 * ***Level1 :** classe qui va lancer le premier niveau (seul et unique niveau **pour l'instant**).*
-
-![](schémas.png)
 
 ## Amélioration à prevoir sur Pac-Man
 *La plus grande partie de Pac-Man a été faite, mais il manque encore deux trois détails à rajouter pour rendre le jeu parfait, comme par exemple le fait que Pac-Man puisse manger une petite boule qui lui donne la possibilité de manger les fantômes pendant quelques secondes. Également le fait d'ajouter un deuxième niveau (en plus du premier que nous avons déjà) avec comme unique ajout, un fantôme en plus qui rendrait la victoire encore plus compliquée.*
