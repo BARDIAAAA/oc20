@@ -6,6 +6,10 @@
 ## Comment jouer ?
 *C'est un jeu qui est très simple au niveau de sa compréhension. Pour jouer au jeu, vous devrez utiliser les quatres flèches que vous avez sur votre clavier pour faire bouger Pac-Man. La flèche du haut le fait monter, celle du bas le fait descendre, celle de gauche le fait tourner à gauche et celle de droite, au contraire, le fait tourner à droite. Dans le cas où vous gagnez la partie ou que vous la perdez, deux possibilités s'offrent à vous, soit de refaire une partie en appuyant sur "ENTRER", soit de quitter le jeu en appuyant sur "ESC".*
 
+![](map_1.png)
+![](lose_1.png)
+![](win_1.png)
+
 ## Les classes (structure interne de notre jeu)
 * ***Paths :** classe où se trouvent toutes les images nécessaires au bon fonctionnement du jeu (Fantômes / Pac-Man), mais également la police.*
 * ***Colors :** classe où se trouvent toutes les couleurs dont nous aurons besoin, classe très basique.*
