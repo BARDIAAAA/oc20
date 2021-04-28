@@ -7,6 +7,7 @@
 *C'est un jeu qui est très simple au niveau de sa compréhension. Pour jouer au jeu, vous devrez utiliser les quatres flèches que vous avez sur votre clavier pour faire bouger Pac-Man. La flèche du haut le fait monter, celle du bas le fait descendre, celle de gauche le fait tourner à gauche et celle de droite, au contraire, le fait tourner à droite. Dans le cas où vous gagnez la partie ou que vous la perdez, deux possibilités s'offrent à vous, soit de refaire une partie en appuyant sur "ENTRER", soit de quitter le jeu en appuyant sur "ESC".*
 
 ![](map_1.png)
+*Vous pouvez voir ci-dessus ce que vous allez voir apparaître en lancant le fichier principal (main.py), c'est un pac-man très simple dans le sens où c'est celui que nous connaissons tous, mais je trouve que rester dans la simplicité et dans les origines du jeu est la meilleure chose à faire lorsqu'on reproduit celui-ci via Pygame.*
 ![](lose_1.png)
 ![](win_1.png)
 
