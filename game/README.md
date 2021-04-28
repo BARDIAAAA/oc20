@@ -9,7 +9,9 @@
 ![](map_1.png)
 
 *Vous pouvez voir ci-dessus ce que vous allez voir apparaître en lancant le fichier principal (main.py), c'est un pac-man très simple dans le sens où c'est celui que nous connaissons tous, mais je trouve que rester dans la simplicité et dans les origines du jeu est la meilleure chose à faire lorsqu'on reproduit celui-ci via Pygame.*
+
 ![](lose_1.png)
+
 ![](win_1.png)
 
 ## Les classes (structure interne de notre jeu)
