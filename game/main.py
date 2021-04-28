@@ -49,19 +49,30 @@ class Game:
                         if event.key == pygame.K_LEFT:
                             hero.changeSpeed([-1, 0])
                             hero.is_move = True
+                            
                         elif event.key == pygame.K_RIGHT:
                             hero.changeSpeed([1, 0])
                             hero.is_move = True
+                            
                         elif event.key == pygame.K_UP:
                             hero.changeSpeed([0, -1])
                             hero.is_move = True
+                            
                         elif event.key == pygame.K_DOWN:
                             hero.changeSpeed([0, 1])
                             hero.is_move = True
+                        
+                        elif event.key == pygame.K_o:
+                            pygame.mixer.music.pause()
+                            
+                        elif event.key == pygame.K_l:
+                            pygame.mixer.music.unpause()
+
                     if event.type == pygame.KEYUP:
                         if (event.key == pygame.K_LEFT) or (event.key == pygame.K_RIGHT) or \
                                 (event.key == pygame.K_UP) or (event.key == pygame.K_DOWN):
-                            hero.is_move = False
+                            hero.is_move = False 
+                            
             screen.fill(self.color.BLACK)
             for hero in heroes:
                 hero.update(walls, gate)
@@ -108,7 +119,6 @@ class Game:
             self.clock.tick(10)
         return is_clearance
 
-
 def showText(screen, font, is_clearance, flag=False):
     clock = pygame.time.Clock()
     msg = 'Vous avez perdu.' if not is_clearance else 'Victoire !'
@@ -138,7 +148,6 @@ def showText(screen, font, is_clearance, flag=False):
         pygame.display.flip()
         clock.tick(10)
 
-
 def initialize():
     pygame.init()
     icon_image = pygame.image.load(Paths().ICON)
@@ -146,7 +155,6 @@ def initialize():
     screen = pygame.display.set_mode([606, 606])
     pygame.display.set_caption('Pac-Man')
     return screen
-
 
 def main(screen):
     pygame.font.init()
@@ -159,10 +167,10 @@ def main(screen):
             showText(screen, font_big, is_clearance, True)
         else:
             showText(screen, font_big, is_clearance)
-
+            
 pygame.mixer.init()
 pygame.mixer.music.load("pac-man.mp3")
 pygame.mixer.music.play(-1)
-pygame.mixer.music.set_volume(0.05)
+pygame.mixer.music.set_volume(0.025)
 
 main(initialize())
