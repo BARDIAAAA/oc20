@@ -6,15 +6,15 @@
 ## Comment jouer ?
 *C'est un jeu qui est très simple au niveau de sa compréhension. Pour jouer au jeu, vous devrez utiliser les quatres flèches que vous avez sur votre clavier pour faire bouger Pac-Man. La flèche du haut le fait monter, celle du bas le fait descendre, celle de gauche le fait tourner à gauche et celle de droite, au contraire, le fait tourner à droite. Dans le cas où vous gagnez la partie ou que vous la perdez, deux possibilités s'offrent à vous, soit de refaire une partie en appuyant sur "ENTER", soit de quitter le jeu en appuyant sur "ESC". Nous vous proposons également d'écouter la musique en lien avec le jeu, car celle-ci est de base présente à l'écoute des joueurs. Pour la désactiver, il vous suffit juste d'appuyer sur "O" et vous verrez donc en-dessous que la musique est en "ON" ou en "OFF".*
 
-![](map_1.png)
+![](map1.png)
 
 *Vous pouvez visualiser ci-dessus ce que vous allez voir apparaître en lancant le fichier principal (main.py), c'est un Pac-Man très simple au niveau de la map dans le sens où c'est celui que nous connaissons tous, mais nous trouvions que rester dans la simplicité et dans les origines même du jeu est la meilleure chose à faire lorsque nous reproduisons celui-ci via Pygame.*
 
-![](lose_1.png)
+![](lose1.png)
 
 *Cette deuxième image de notre Pac-Man montre la vue que vous aurez lorsque votre partie sera perdue. Utilisez une police typée "Arcade" nous semblait indispensable pour rester sur les origines du jeu et oublier que celui-ci a été reproduit en 2021. L'histoire du jeu est en quelque sorte son ADN donc il n'était pas envisageable pour nous de lui retirer quelque chose d'aussi important.*
 
-![](win_1.png)
+![](win1.png)
 
 *Cette dernière image montre la vue que vous aurez lorsque la partie sera, au contraire, gagnée. Celle-ci sera gagnée quand toutes les boules seront mangées par Pac-Man, le héros du jeu. À ce moment-là, vous aurez la possibilité de relancer une partie en appuyant sur "ENTER" ou de quitter le jeu en appuyant sur "ESC". Même chose lorsque la partie est perdue.* 
 
