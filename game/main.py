@@ -3,7 +3,6 @@ import sys
 import pygame
 import levels as levels
 
-
 class Paths:
     def __init__(self):
         self.ICON = os.path.join(os.getcwd(), 'resources/images/pacman.png')
@@ -20,9 +19,11 @@ class Colors:
         self.RED = (255, 0, 0)
         self.WHITE = (255, 255, 255)
         self.GREEN = (0, 255, 0)
-        self.GREY = (128,128,128)
-        self.YELLOW = (255,215,0)
-        self.BLUE = (65,105,225)
+        self.GREY = (128, 128, 128)
+        self.YELLOW = (255, 215, 0)
+        self.BLUE = (65, 105, 225)
+        self.CIEL = (0, 153, 153)
+        self.PURPLE = (102, 102, 255)
 
 class Game:
     def __init__(self):
@@ -32,13 +33,13 @@ class Game:
         self.clock = pygame.time.Clock()
 
     def start(self, level, screen, font):
-        walls = level.setupWalls(self.color.BLUE)
+        walls = level.setupWalls(self.color.PURPLE)
         gate = level.setupGate(self.color.BLACK)
         heroes, ghost_sprites = level.setupPlayers(
             self.path.PACMAN,
             [self.path.BLINKY, self.path.CLYDE, self.path.INKY, self.path.PINKY]
         )
-        foods = level.setupFood(self.color.YELLOW, self.color.WHITE)
+        foods = level.setupFood(self.color.CIEL, self.color.WHITE)
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -110,8 +111,8 @@ class Game:
 
 def showText(screen, font, is_clearance, flag=False):
     clock = pygame.time.Clock()
-    msg = 'Vous avez perdu.' if not is_clearance else 'Vous avez gagné !'
-    positions = [[175, 233], [35, 303], [53, 333]] if not is_clearance else [[145, 233], [65, 303], [170, 333]]
+    msg = 'Vous avez perdu.' if not is_clearance else 'Victoire !'
+    positions = [[175, 233], [35, 303], [53, 333]] if not is_clearance else [[230, 233], [35, 303], [53, 333]]
     surface = pygame.Surface((400, 200))
     surface.set_alpha(10)
     surface.fill((128, 128, 128))
