@@ -10,6 +10,8 @@
 ![](win_1.png)
 ![](lose_1.png)
 
+![](win_1.png)
+
 ## Les classes (structure interne de notre jeu)
 * ***Paths :** classe où se trouvent toutes les images nécessaires au bon fonctionnement du jeu (Fantômes / Pac-Man), mais également la police.*
 * ***Colors :** classe où se trouvent toutes les couleurs dont nous aurons besoin, classe très basique.*
