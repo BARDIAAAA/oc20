@@ -1,4 +1,4 @@
-## oc20 - Projet Editor
+# oc20 - Projet Editor
 
 ## Introduction
 *L'éditeur graphique permet de :*
