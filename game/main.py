@@ -179,7 +179,7 @@ def main(screen):
             showText(screen, font_big, is_clearance)
             
 pygame.mixer.init()
-pygame.mixer.music.load("pac-man-theme.wav")
+pygame.mixer.music.load("ressource/music/pac-man-theme.wav")
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(0.5)
 
