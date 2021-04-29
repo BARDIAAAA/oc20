@@ -10,12 +10,15 @@
 *Cette deuxième partie n'est pas très riche en contenu car elle contient uniquement toutes les images que nous avons utilisé durant l'entièreté du projet, que ces images proviennent de l'éditeur ou du jeu en lui-même.*
 
 ### 3) Editor
-*Cette troisième partie est importante car elle nous a permis d'appliquer nos connaissances dans un cadre pratique. Lorsque l'on parle d'informatique, le meilleur exercice pour s'entraîner au codage est la pratique. Donc, avoir un exemple nous permettant d'utiliser nos connaissances à de bons fins ne pouvaient que nous aider pour la suite du projet. Cette troisième catégorie contient un Read.me directement sur le fichier, ce qui permet de voir ce à quoi correspond l'éditeur graphique.*
+*Cette troisième partie est importante car elle nous a permis d'appliquer nos connaissances dans un cadre pratique. Lorsque l'on parle d'informatique, le meilleur exercice pour s'entraîner au codage est la pratique. Donc, avoir un exemple nous permettant d'utiliser nos connaissances à de bons fins ne pouvaient que nous aider pour la suite du projet.*
+
+*Cette troisième catégorie contient un Read.me directement sur le fichier, ce qui permet de voir ce à quoi correspond notre éditeur, et les fonctionnalités qui y sont affiliées.*
 
 ### 4) Game
 *Cette partie est la plus importante car c'est celle qui contient l'élément principal du projet : le jeu vidéo. En l'occurence, le jeu vidéo dans notre cas est un Pac-Man et nécéssite un grand nombre d'autres fichiers pour que la totalité du projet "Game" fonctionne (Jeu + Read.me), c'est donc pour cela que vous y retrouverez :*
-* ***Des screens***
-* ***Les trois fichiers de code qui permettent au jeu d'exister, et la musique que nous utilisons pour animer un peu plus le jeu***
-* ***Un fichier qui contient les apparences des fantômes et de pac-man et qui contient égalemment la police d'écriture utilisée sur le jeu vidéo***
- 
+* ***Les trois fichiers de code qui permettent au jeu d'exister (main.py / Sprites.py / levels.py).***
+* ***Un fichier "font" contenant la police que nous utilisons pour afficher toutes les informations nécessaire.***
+* ***Un fichier "image" contenant les images que nous utilisons pour la catégorie "Game" (Pac-Man & Read.me).***
+* ***Un fichier "music" contenant la musique utilisée dans notre jeu pour le rendre plus sympathique.***
+
 *Cette quatrième catégorie contient un Read.me directement sur le fichier, ce qui permet de voir ce à quoi correspond le jeu vidéo, et les fonctionnalités qui y sont affiliées.*
