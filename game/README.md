@@ -27,7 +27,7 @@
 * ***Player :** classe qui va créer toutes les entités.*
 * ***Level1 :** classe qui va lancer le premier niveau (seul et unique niveau **pour l'instant**).*
 
-![](diagram pacman.png)
+![](diagram-pacman.png)
 
 ## Amélioration à prevoir sur Pac-Man
 *La plus grande partie de Pac-Man a été faite, mais il manque encore deux trois détails à rajouter pour rendre le jeu parfait, comme par exemple le fait que Pac-Man puisse manger une petite boule qui lui donne la possibilité de manger les fantômes pendant quelques secondes. Également le fait d'ajouter un deuxième niveau (en plus du premier que nous avons déjà) avec comme unique ajout, un fantôme en plus qui rendrait la victoire encore plus compliquée.*
