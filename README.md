@@ -13,9 +13,9 @@
 *Cette troisième partie est importante car elle nous a permis d'appliquer nos connaissances dans un cadre pratique. Lorsque l'on parle d'informatique, le meilleur exercice pour s'entraîner au codage est la pratique. Donc, avoir un exemple nous permettant d'utiliser nos connaissances à de bons fins ne pouvaient que nous aider pour la suite du projet. Cette troisième catégorie contient un Read.me directement sur le fichier, ce qui permet de voir ce à quoi correspond l'éditeur graphique.*
 
 ### 4) Game
-*Cette partie est la plus importante car c'est celle qui contient l'élément principal du projet : le jeu vidéo. En l'occurence, le jeu vidéo dans notre cas est un Pac-Man et nécéssite un grand nombre d'autres fichiers pour que la totalité du projet "Game" fonctionne (Jeu + Read.me), c'est donc pour cela que vous y retrouverez :
-* des screens 
-* les trois fichiers de code qui permettent au jeu d'exister, et la musique que nous utilisons pour animer un peu plus le jeu
-* un fichier qui contient les apparences des fantômes et de pac-man et qui contient égalemment la police d'écriture utilisée sur le jeu vidéo.
+*Cette partie est la plus importante car c'est celle qui contient l'élément principal du projet : le jeu vidéo. En l'occurence, le jeu vidéo dans notre cas est un Pac-Man et nécéssite un grand nombre d'autres fichiers pour que la totalité du projet "Game" fonctionne (Jeu + Read.me), c'est donc pour cela que vous y retrouverez :*
+* ***Des screens***
+* ***Les trois fichiers de code qui permettent au jeu d'exister, et la musique que nous utilisons pour animer un peu plus le jeu***
+* ***Un fichier qui contient les apparences des fantômes et de pac-man et qui contient égalemment la police d'écriture utilisée sur le jeu vidéo***
  
 *Cette quatrième catégorie contient un Read.me directement sur le fichier, ce qui permet de voir ce à quoi correspond le jeu vidéo, et les fonctionnalités qui y sont affiliées.*
