@@ -10,7 +10,7 @@
 *Cette deuxième partie n'est pas très riche en contenu car elle contient uniquement toutes les images que nous avons utilisé durant l'entièreté du projet, que ces images proviennent de l'éditeur ou du jeu en lui-même.*
 
 ### 3) Editor
-*Cette troisième partie est importante car elle nous a permis d'appliquer nos connaissances dans un cadre pratique. Lorsque l'on parle d'informatique, le meilleur exercice pour s'entraîner au codage est la pratique. Donc, avoir un exemple nous permettant d'utiliser nos connaissances à de bons fins ne pouvaient que nous aider pour la suite du projet. Cette troisième catégorie contient un Read.me directement sur le fichier, ce qui permet de voir ce à quoi correspond l'éditeur graphique.*
+*Cette troisième partie est importante car elle nous a permis d'appliquer nos connaissances dans un cadre pratique. Lorsque l'on parle d'informatique, le meilleur exercice pour s'entraîner au codage est la pratique. Donc, avoir un exemple nous permettant d'utiliser nos connaissances à de bons fins ne pouvaient que nous aider pour la suite du projet.*
 
 *Cette troisième catégorie contient un Read.me directement sur le fichier, ce qui permet de voir ce à quoi correspond notre éditeur, et les fonctionnalités qui y sont affiliées.*
 
