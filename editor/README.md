@@ -15,7 +15,7 @@
 * Changement de couleurs du background
 
 ## Interface
-*Voici un exemple de création que vous pouvez effectuez via notre éditeur :*
+*Voici un exemple de création que vous pouvez effectuer via notre éditeur :*
 
 ![](image/birdblue.png)
 
