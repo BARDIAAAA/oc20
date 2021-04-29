@@ -5,13 +5,13 @@ import levels as levels
 
 class Paths:
     def __init__(self):
-        self.ICON = os.path.join(os.getcwd(), 'resources/images/pacman.png')
-        self.FONT = os.path.join(os.getcwd(), 'resources/font/arcade.ttf')
-        self.PACMAN = os.path.join(os.getcwd(), 'resources/images/pacman.png')
-        self.BLINKY = os.path.join(os.getcwd(), 'resources/images/Blinky.png')
-        self.CLYDE = os.path.join(os.getcwd(), 'resources/images/Clyde.png')
-        self.INKY = os.path.join(os.getcwd(), 'resources/images/Inky.png')
-        self.PINKY = os.path.join(os.getcwd(), 'resources/images/Pinky.png')
+        self.ICON = os.path.join(os.getcwd(), 'ressource/image/pacman.png')
+        self.FONT = os.path.join(os.getcwd(), 'ressource/font/arcade.ttf')
+        self.PACMAN = os.path.join(os.getcwd(), 'ressource/image/pacman.png')
+        self.BLINKY = os.path.join(os.getcwd(), 'ressource/image/Blinky.png')
+        self.CLYDE = os.path.join(os.getcwd(), 'ressource/image/Clyde.png')
+        self.INKY = os.path.join(os.getcwd(), 'ressource/image/Inky.png')
+        self.PINKY = os.path.join(os.getcwd(), 'ressource/image/Pinky.png')
 
 class Colors:
     def __init__(self):

@@ -23,7 +23,7 @@ class segment:
 
 class image:
     def __init__(self):
-        self.img = pygame.image.load('bird.png')
+        self.img = pygame.image.load('image/bird.png')
         self.moving = False
         self.rect = self.img.get_rect()
         self.x = 250
