@@ -38,5 +38,5 @@
 *Maintenir le clique et le relâcher pour créer un segment, ceci est seulement possible si l'image est gelée via la touche "N". Pour faire bouger l'image, represser sur la touche "N" et effectuer un mouvement avec la souris*
 
 ## Conclusion
-Le but de ce travail a été atteint. La prochaine étape consistera a utiliser cet éditeur graphique pour créer un jeu basé sur le type *tower defense*.
-(type de jeu changé par la suite)
+*Le but de ce travail a été atteint. La prochaine étape consistera a utiliser cet éditeur graphique pour créer un jeu basé sur le type *tower defense*.
+(type de jeu changé par la suite).*
