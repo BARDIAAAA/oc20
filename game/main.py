@@ -3,15 +3,20 @@ import sys
 import pygame
 import levels as levels
 
+pygame.mixer.init()
+pygame.mixer.music.load("ressource/music/pac-man-theme.wav")
+pygame.mixer.music.play(-1)
+pygame.mixer.music.set_volume(0.1)
+
 class Paths:
     def __init__(self):
         self.ICON = os.path.join(os.getcwd(), 'ressource/image/pacman.png')
         self.FONT = os.path.join(os.getcwd(), 'ressource/font/arcade.ttf')
         self.PACMAN = os.path.join(os.getcwd(), 'ressource/image/pacman.png')
-        self.BLINKY = os.path.join(os.getcwd(), 'ressource/image/Blinky.png')
-        self.CLYDE = os.path.join(os.getcwd(), 'ressource/image/Clyde.png')
-        self.INKY = os.path.join(os.getcwd(), 'ressource/image/Inky.png')
-        self.PINKY = os.path.join(os.getcwd(), 'ressource/image/Pinky.png')
+        self.BLINKY = os.path.join(os.getcwd(), 'ressource/image/blinky.png')
+        self.CLYDE = os.path.join(os.getcwd(), 'ressource/image/clyde.png')
+        self.INKY = os.path.join(os.getcwd(), 'ressource/image/inky.png')
+        self.PINKY = os.path.join(os.getcwd(), 'ressource/image/pinky.png')
 
 class Colors:
     def __init__(self):
@@ -177,10 +182,5 @@ def main(screen):
             showText(screen, font_big, is_clearance, True)
         else:
             showText(screen, font_big, is_clearance)
-            
-pygame.mixer.init()
-pygame.mixer.music.load("ressource/music/pac-man-theme.wav")
-pygame.mixer.music.play(-1)
-pygame.mixer.music.set_volume(0.5)
 
 main(initialize())
