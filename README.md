@@ -16,9 +16,9 @@
 
 ### 4) Game
 *Cette partie est la plus importante car c'est celle qui contient l'élément principal du projet : le jeu vidéo. En l'occurence, le jeu vidéo dans notre cas est un Pac-Man et nécéssite un grand nombre d'autres fichiers pour que la totalité du projet "Game" fonctionne (Jeu + Read.me), c'est donc pour cela que vous y retrouverez :*
-* ***Les trois fichiers de code qui permettent au jeu d'exister (main.py / Sprites.py / levels.py).***
-* ***Un fichier "font" contenant la police que nous utilisons pour afficher toutes les informations nécessaire.***
-* ***Un fichier "image" contenant les images que nous utilisons pour la catégorie "Game" (Pac-Man & Read.me).***
+* ***Le fichier de code qui permet au jeu d'exister (main.py).***
+* ***Un fichier "font" contenant la police que nous utiliserons pour afficher toutes les informations nécessaire.***
+* ***Un fichier "images" contenant les images que nous utilisons pour la catégorie "Game" (Pac-Man & Read.me).***
 * ***Un fichier "music" contenant la musique utilisée dans notre jeu pour le rendre plus sympathique.***
 
 *Cette quatrième catégorie contient un Read.me directement sur le fichier, ce qui permet de voir ce à quoi correspond le jeu vidéo, et les fonctionnalités qui y sont affiliées.*

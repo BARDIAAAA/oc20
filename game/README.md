@@ -32,8 +32,9 @@
 
 **[4]** *Les prochains étapes arriveront très prochainement, dans les quelques jours à suivre, le jeu sera complètement terminé et vous verrez les étapes qui m'ont permis d'y arriver ici.*
 
-## Source 
+## Sources 
 *Pour les sources que j'ai utilisé, je vais les classer dans différentes catégories que je vais nommer très clairement ci-dessous car je n'ai pas utilisé un Tutoriel à part entière mais un ensemble de sources différentes qui m'ont permis d'arriver jusqu'ici.*
+
 * **[Création de rectangles] :**
 
       https://stackoverflow.com/questions/19780411/pygame-drawing-a-rectangle *(création de rectangles)*
@@ -55,4 +56,4 @@
 *Les entités utilisées par notre jeu nous ont été données à la suite de notre demande par un volontaire.*
 
 ## Collaboration
-*Mon ami Léandro, pour ce jeu m'a aidé à coder les fonctions qui se situent entre le SetMoving et le SetY (dans la classe Hero), ce sont des fonctions qui ne sont actuellement pas utilisées mais elles le seront plus tard. Le reste du travail a été effectué par moi-même (Bardia).*
+*Mon ami Léandro (Merci à lui), pour ce jeu, m'a aidé à coder les fonctions qui se situent entre le SetMoving et le SetY (dans la classe Hero), ce sont des fonctions qui ne sont actuellement pas utilisées mais elles le seront plus tard. Le reste du travail a été effectué par moi-même (Bardia).*
