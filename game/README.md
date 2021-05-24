@@ -32,7 +32,7 @@
 
 **[4]** *Les prochains étapes arriveront très prochainement, dans les quelques jours à suivre, le jeu sera complètement terminé et vous verrez les étapes qui m'ont permis d'y arriver ici.*
 
-## Source 
+## Sources 
 *Pour les sources que j'ai utilisé, je vais les classer dans différentes catégories que je vais nommer très clairement ci-dessous car je n'ai pas utilisé un Tutoriel à part entière mais un ensemble de sources différentes qui m'ont permis d'arriver jusqu'ici.*
 
 * **[Création de rectangles] :**
