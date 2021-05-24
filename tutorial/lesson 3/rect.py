@@ -21,6 +21,6 @@ dir = {K_LEFT: (-5, 0), K_RIGHT: (5, 0), K_UP: (0, -5), K_DOWN: (0, 5)}
 
 pygame.init()
 screen = pygame.display.set_mode((width, height))
-font = pygame.font.Font(None, 24)
+font = pygame.font.Font(RED, 24)
 running = True
 

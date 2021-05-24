@@ -1,172 +1,94 @@
-import random
-import pygame, sys
+import pygame
 from pygame.locals import *
 
-pygame.init()
-fps = pygame.time.Clock()
+class color:
+    def __init__(self):
+        self.black = (0, 0, 0)
+        self.red = (255, 0, 0)
+        self.gray = (150, 150, 150)
+        self.green = (0, 255, 0)
+        self.white = (255, 255, 255)
+        self.blue = (0, 0, 255)
 
-#colors
-WHITE = (255,255,255)
-RED = (255,0,0)
-GREEN = (0,255,0)
-BLACK = (0,0,0)
-YELLOW = (255, 215, 0)
-BLUE = (65, 105, 225)
-PURPLE = (102, 102, 255)
+class segment:
+    def __init__(self):
+        self.start = (0, 0)
+        self.end = (0, 0)
 
-#données temps 0
-WIDTH = 800
-HEIGHT = 600       
-BALL_RADIUS = 20
-PAD_WIDTH = 8
-PAD_HEIGHT = 80
-HALF_PAD_WIDTH = PAD_WIDTH / 2
-HALF_PAD_HEIGHT = PAD_HEIGHT / 2
-ball_pos = [0,0]
-ball_rapidity = [0,0]
-paddle1_rapidity = 0
-paddle2_rapidity = 0
-left_score = 0
-right_score = 0
+    def setStart(position):
+        segment.start = position
 
-#canvas declaration
-window = pygame.display.set_mode((WIDTH, HEIGHT), 0, 32)
-pygame.display.set_caption('Pong game')
+    def setEnd(position):
+        segment.end = position
 
-# helper function that spawns a ball, returns a position vector and a rapidity vector
-def ball_init(right):
-    global ball_pos, ball_rapidity 
-    ball_pos = [WIDTH/2,HEIGHT/2]
-    horz = random.randrange(2,4)
-    vert = random.randrange(1,3)
-    
-    if right == False:
-        horz = - horz
-        
-    ball_rapidity = [horz,-vert]
+    def getSegment():
+        list = []
+        list.append(segment.start)
+        list.append(segment.end)
+        return list
 
-# define event handlers
-def init():
-    global paddle1_pos, paddle2_pos, paddle1_rapidity, paddle2_rapidity,left_score,right_score 
-    global score1, score2  
-    paddle1_pos = [HALF_PAD_WIDTH - 1,HEIGHT/2]
-    paddle2_pos = [WIDTH +1 - HALF_PAD_WIDTH,HEIGHT/2]
-    left_score = 0
-    right_score = 0
-    if random.randrange(0,2) == 0:
-        ball_init(True)
-    else:
-        ball_init(False)
+class main:
+    "Lancement du logiciel"
+    def __init__(self):
+        self.color = color()
+        self.segment = segment()
+        self.undo = []
+        self.list_lines = []
+        self.background = self.color.white
 
+        # Brouillon
+        key_dict = {K_r:self.color.red, K_g:self.color.gray, K_v:self.color.green, K_w:self.color.white, K_b:self.color.blue}
+        pygame.init()
+        screen = pygame.display.set_mode((800, 800))
+        img = pygame.image.load('bird.png')
+        img.convert()
+        rect = img.get_rect()
+        rect.center = w, h = 400, 400
+        moving = False
 
-#draw function of canvas
-def draw(canvas):
-    global paddle1_pos, paddle2_pos, ball_pos, ball_rapidity, left_score, right_score
-           
-    canvas.fill(BLACK)
-    pygame.draw.line(canvas, WHITE, [WIDTH / 2, 0],[WIDTH / 2, HEIGHT], 1)
-    pygame.draw.line(canvas, WHITE, [PAD_WIDTH, 0],[PAD_WIDTH, HEIGHT], 1)
-    pygame.draw.line(canvas, WHITE, [WIDTH - PAD_WIDTH, 0],[WIDTH - PAD_WIDTH, HEIGHT], 1)
-    pygame.draw.circle(canvas, WHITE, [WIDTH//2, HEIGHT//2], 70, 1)
+        while True:
+            for event in pygame.event.get():
+                if event.type == KEYDOWN:
 
-    # update paddle's vertical position, keep paddle on the screen
-    if paddle1_pos[1] > HALF_PAD_HEIGHT and paddle1_pos[1] < HEIGHT - HALF_PAD_HEIGHT:
-        paddle1_pos[1] += paddle1_rapidity
-    elif paddle1_pos[1] == HALF_PAD_HEIGHT and paddle1_rapidity > 0:
-        paddle1_pos[1] += paddle1_rapidity
-    elif paddle1_pos[1] == HEIGHT - HALF_PAD_HEIGHT and paddle1_rapidity < 0:
-        paddle1_pos[1] += paddle1_rapidity
-    
-    if paddle2_pos[1] > HALF_PAD_HEIGHT and paddle2_pos[1] < HEIGHT - HALF_PAD_HEIGHT:
-        paddle2_pos[1] += paddle2_rapidity
-    elif paddle2_pos[1] == HALF_PAD_HEIGHT and paddle2_rapidity > 0:
-        paddle2_pos[1] += paddle2_rapidity
-    elif paddle2_pos[1] == HEIGHT - HALF_PAD_HEIGHT and paddle2_rapidity < 0:
-        paddle2_pos[1] += paddle2_rapidity
+                    if event.key == K_n:
+                        if (moving):
+                            moving = False
+                        else:
+                            moving = True
 
-    #update ball
-    ball_pos[0] += int(ball_rapidity[0])
-    ball_pos[1] += int(ball_rapidity[1])
+                    elif event.key == K_z:
+                        if (len(self.list_lines) > 0):
+                            self.undo.append(self.list_lines[-1])
+                            self.list_lines.pop()
 
-    #draw paddles and ball
-    pygame.draw.circle(canvas, RED, ball_pos, 20, 0)
-    pygame.draw.polygon(canvas, GREEN, [[paddle1_pos[0] - HALF_PAD_WIDTH, paddle1_pos[1] - HALF_PAD_HEIGHT], [paddle1_pos[0] - HALF_PAD_WIDTH, paddle1_pos[1] + HALF_PAD_HEIGHT], [paddle1_pos[0] + HALF_PAD_WIDTH, paddle1_pos[1] + HALF_PAD_HEIGHT], [paddle1_pos[0] + HALF_PAD_WIDTH, paddle1_pos[1] - HALF_PAD_HEIGHT]], 0)
-    pygame.draw.polygon(canvas, GREEN, [[paddle2_pos[0] - HALF_PAD_WIDTH, paddle2_pos[1] - HALF_PAD_HEIGHT], [paddle2_pos[0] - HALF_PAD_WIDTH, paddle2_pos[1] + HALF_PAD_HEIGHT], [paddle2_pos[0] + HALF_PAD_WIDTH, paddle2_pos[1] + HALF_PAD_HEIGHT], [paddle2_pos[0] + HALF_PAD_WIDTH, paddle2_pos[1] - HALF_PAD_HEIGHT]], 0)
+                    elif event.key == K_y:
+                        if (len(self.undo) > 1):
+                            self.list_lines.append(self.undo[-1])
+                            self.undo.pop()
+                    else:
+                        for key in key_dict.keys():
+                            if event.key == key:
+                                self.background = key_dict.get(key)
 
-    #ball collision check on top and bottom walls
-    if int(ball_pos[1]) <= BALL_RADIUS:
-        ball_rapidity[1] = - ball_rapidity[1]
-    if int(ball_pos[1]) >= HEIGHT + 1 - BALL_RADIUS:
-        ball_rapidity[1] = -ball_rapidity[1]
-    
-    #ball collison check on gutters or paddles
-    if int(ball_pos[0]) <= BALL_RADIUS + PAD_WIDTH and int(ball_pos[1]) in range(paddle1_pos[1] - HALF_PAD_HEIGHT,paddle1_pos[1] + HALF_PAD_HEIGHT,1):
-        ball_rapidity[0] = -ball_rapidity[0]
-        ball_rapidity[0] *= 1.1
-        ball_rapidity[1] *= 1.1
-    elif int(ball_pos[0]) <= BALL_RADIUS + PAD_WIDTH:
-        right_score += 1
-        ball_init(True)
-        
-    if int(ball_pos[0]) >= WIDTH + 1 - BALL_RADIUS - PAD_WIDTH and int(ball_pos[1]) in range(paddle2_pos[1] - HALF_PAD_HEIGHT,paddle2_pos[1] + HALF_PAD_HEIGHT,1):
-        ball_rapidity[0] = -ball_rapidity[0]
-        ball_rapidity[0] *= 1.1
-        ball_rapidity[1] *= 1.1
-    elif int(ball_pos[0]) >= WIDTH + 1 - BALL_RADIUS - PAD_WIDTH:
-        left_score += 1
-        ball_init(False)
+                elif event.type == MOUSEMOTION and moving:
+                    rect.move_ip(event.rel)
 
-    #update scores
-    myfont1 = pygame.font.SysFont("MS", 20)
-    label1 = myfont1.render("Score "+str(left_score), 1, (255,255,0))
-    canvas.blit(label1, (50,20))
+                elif event.type == MOUSEBUTTONDOWN:
+                    segment.setStart(event.pos)                  
+                elif event.type == MOUSEBUTTONUP:
+                    segment.setEnd(event.pos)
+                    self.list_lines.append(segment.getSegment())
 
-    myfont2 = pygame.font.SysFont("MS", 20)
-    label2 = myfont2.render("Score "+str(right_score), 1, (255,255,0))
-    canvas.blit(label2, (470, 20))  
-    
-    
-#keydown handler
-def keydown(event):
-    global paddle1_rapidity, paddle2_rapidity
-    
-    if event.key == K_UP:
-        paddle2_rapidity = -8
-    elif event.key == K_DOWN:
-        paddle2_rapidity = 8
-    elif event.key == K_w:
-        paddle1_rapidity = -8
-    elif event.key == K_s:
-        paddle1_rapidity = 8
+            screen.fill(self.background)
+            screen.blit(img, rect)
 
-#keyup handler
-def keyup(event):
-    global paddle1_rapidity, paddle2_rapidity
-    
-    if event.key in (K_w, K_s):
-        paddle1_rapidity = 0
-    elif event.key in (K_UP, K_DOWN):
-        paddle2_rapidity = 0
+            if len(self.list_lines) > 0:
+                for line_i in self.list_lines:
+                    pygame.draw.lines(screen, self.color.black, True, line_i, 3)
 
-init()
+            pygame.display.update()
 
+    pygame.quit()
 
-#game loop
-while True:
-
-    draw(window)
-
-    for event in pygame.event.get():
-
-        if event.type == KEYDOWN:
-            keydown(event)
-        elif event.type == KEYUP:
-            keyup(event)
-        elif event.type == QUIT:
-            pygame.quit()
-            sys.exit()
-            
-    pygame.display.update()
-    fps.tick(60)
-    
-pygame.quit()
+print(main.__doc__)
+main() 
