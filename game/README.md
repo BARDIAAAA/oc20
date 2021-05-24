@@ -34,6 +34,7 @@
 
 ## Source 
 *Pour les sources que j'ai utilisé, je vais les classer dans différentes catégories que je vais nommer très clairement ci-dessous car je n'ai pas utilisé un Tutoriel à part entière mais un ensemble de sources différentes qui m'ont permis d'arriver jusqu'ici.*
+
 * **[Création de rectangles] :**
 
       https://stackoverflow.com/questions/19780411/pygame-drawing-a-rectangle *(création de rectangles)*
