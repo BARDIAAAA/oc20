@@ -34,9 +34,9 @@
 *Pour les sources que j'ai utilisé, je vais les classer dans différentes catégories que je vais nommer très clairement ci-dessous car je n'ai pas utilisé un Tutoriel à part entière mais un ensemble de sources différentes qui m'ont permis d'arriver jusqu'ici.*
 * **[Aides trouvées sur des forums] :**
 
-https://stackoverflow.com/questions/19780411/pygame-drawing-a-rectangle *(création de rectangles)*
+      https://stackoverflow.com/questions/19780411/pygame-drawing-a-rectangle *(création de rectangles)*
 
-https://www.geeksforgeeks.org/python-display-images-with-pygame/#:~:text=Create%20a%20Image%20surface%20object,the%20pygame%20window%20using%20display. *(téléchargement des images)* 
+      https://www.geeksforgeeks.org/python-display-images-with-pygame/#:~:text=Create%20a%20Image%20surface%20object,the%20pygame%20window%20using%20display. *   (téléchargement des images)* 
   
 * **[Document PyGame] :**
 
