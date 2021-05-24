@@ -18,6 +18,8 @@
 * ***Hero :*** *classe qui va permettre d'implanter Pac-Man à tel ou tel endroit.*
 * ***Game :*** *classe la plus importante, c'est par exemple celle qui va dessiner les murs, celle qui permettra de bouger Pac-Man, la classe principale.*
 
+![](resources/images/diag.png)
+
 ## Amélioration nécessaire sur le Pac-Man
 *Le jeu a l'état actuel n'est pas encore "jouable". Il ne manque néanmoins pas beaucoup de choses à faire pour que le jeu soit fini. Il faut faire bouger Pac-Man / Fantômes, rendre les murs "durs" / Ajouter la nourriture et faire en sorte que Pac-Man puisse perdre ou gagner selon la partie.*
 
@@ -50,7 +52,7 @@
 
 * **[Images] :**
 
-*Les entités utilisées par notre jeu nous ont été données à la suite de notre demande par des volontaires.*
+*Les entités utilisées par notre jeu nous ont été données à la suite de notre demande par un volontaire.*
 
 ## Collaboration
 *Mon ami Léandro, pour ce jeu m'a aidé à coder les fonctions qui se situent entre le SetMoving et le SetY (dans la classe Hero), ce sont des fonctions qui ne sont actuellement pas utilisées mais elles le seront plus tard. Le reste du travail a été effectué par moi-même (Bardia).*
