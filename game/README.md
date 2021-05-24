@@ -56,4 +56,4 @@
 *Les entités utilisées par notre jeu nous ont été données à la suite de notre demande par un volontaire.*
 
 ## Collaboration
-*Mon ami Léandro, pour ce jeu m'a aidé à coder les fonctions qui se situent entre le SetMoving et le SetY (dans la classe Hero), ce sont des fonctions qui ne sont actuellement pas utilisées mais elles le seront plus tard. Le reste du travail a été effectué par moi-même (Bardia).*
+*Mon ami Léandro (Merci à lui), pour ce jeu, m'a aidé à coder les fonctions qui se situent entre le SetMoving et le SetY (dans la classe Hero), ce sont des fonctions qui ne sont actuellement pas utilisées mais elles le seront plus tard. Le reste du travail a été effectué par moi-même (Bardia).*
