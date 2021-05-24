@@ -35,17 +35,15 @@
 * **[Aides trouvées sur des forums] :**
 
       https://stackoverflow.com/questions/19780411/pygame-drawing-a-rectangle *(création de rectangles)*
-      
-
-      https://www.geeksforgeeks.org/python-display-images-with-pygame/#:~:text=Create%20a%20Image%20surface%20object,the%20pygame%20window%20using%20display. *   (téléchargement des images)* 
+      https://www.geeksforgeeks.org/python-display-images-with-pygame/#:~:text=Create%20a%20Image%20surface%20object,the%20pygame%20window%20using%20display.
   
 * **[Document PyGame] :**
 
-https://www.pygame.org/docs/ *(aide de façon très général)*
+      https://www.pygame.org/docs/ *(aide de façon très général)*
 
 * **[Musique] :**
 
-https://www.youtube.com/watch?v=fk_Klxd3-0A&t=7s *(musique tournée en boucle via le pygame.mixer.music.play(-1))*
+      https://www.youtube.com/watch?v=fk_Klxd3-0A&t=7s *(musique tournée en boucle via le pygame.mixer.music.play(-1))*
 
 * **[Images] :**
 
