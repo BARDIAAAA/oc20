@@ -45,11 +45,11 @@
   
 * **[Document PyGame] :**
 
-      https://www.pygame.org/docs/ *(aide de façon très général)*
+      https://www.pygame.org/docs/
 
 * **[Musique] :**
 
-      https://www.youtube.com/watch?v=fk_Klxd3-0A&t=7s *(musique tournée en boucle via le pygame.mixer.music.play(-1))*
+      https://www.youtube.com/watch?v=fk_Klxd3-0A&t=7s
 
 * **[Images] :**
 
