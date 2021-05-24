@@ -5,7 +5,7 @@
 
 ![](resources/images/arcade.png)
 
-*Voici une affiche de Pac-Man tirée d'Internet (Lien dans les sources à la fin).
+*Voici une affiche de Pac-Man tirée d'Internet (Lien dans les sources à la fin).*
 
 ## Comment jouer ?
 *Actuellement, notre jeu n'est pas encore en état de fonctionnement à cause du manque de temps, il le sera dans très peu de temps, mais pour vous donner une idée générale de ce que le jeu aura comme allure, voici ce que nous comptons faire : C'est un jeu qui est très simple au niveau de sa compréhension. Pour jouer au jeu, vous devrez utiliser les quatres flèches que vous avez sur votre clavier pour faire bouger Pac-Man. La flèche du haut le fait monter, celle du bas le fait descendre, celle de gauche le fait tourner à gauche et celle de droite, au contraire, le fait tourner à droite. Dans le cas où vous gagnez la partie ou que vous la perdez, deux possibilités s'offrent à vous, soit de refaire une partie en appuyant sur "ENTER", soit de quitter le jeu en appuyant sur "ESC". Nous vous proposons également d'écouter la musique en lien avec le jeu, celle-ci est de base présente à l'écoute des joueurs. Pour la désactiver, il vous suffit juste d'appuyer sur "O" et vous verrez donc en-dessous que la musique est en "ON" ou en "OFF".*
