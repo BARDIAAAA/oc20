@@ -16,6 +16,8 @@
 
 ![](ressource/image/win1.png)
 
+![](resources/images/apercu.png)
+
 *Cette dernière image montre la vue que vous aurez lorsque la partie sera, au contraire, gagnée. Celle-ci sera gagnée quand toutes les boules seront mangées par Pac-Man, le héros du jeu. À ce moment-là, vous aurez la possibilité de relancer une partie en appuyant sur "ENTER" ou de quitter le jeu en appuyant sur "ESC". Même chose lorsque la partie est perdue.* 
 
 ## Les classes (structure interne de notre jeu)
