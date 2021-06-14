@@ -102,8 +102,8 @@ def draw(canvas):
     #ball collison check on gutters or paddles
     if int(ball_pos[0]) <= BALL_RADIUS + PAD_WIDTH and int(ball_pos[1]) in range(paddle1_pos[1] - HALF_PAD_HEIGHT,paddle1_pos[1] + HALF_PAD_HEIGHT,1):
         ball_rapidity[0] = -ball_rapidity[0]
-        ball_rapidity[0] *= 1.1
-        ball_rapidity[1] *= 1.1
+        ball_rapidity[0] *= 1.3
+        ball_rapidity[1] *= 1.3
     elif int(ball_pos[0]) <= BALL_RADIUS + PAD_WIDTH:
         right_score += 1
         ball_init(True)
