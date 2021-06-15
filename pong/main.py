@@ -10,10 +10,6 @@ class Settings:
     HALF_PAD_WIDTH = PAD_WIDTH / 2
     HALF_PAD_HEIGHT = PAD_HEIGHT / 2
     ball_rapidity = [0, 0]
-    paddle1_rapidity = 0
-    paddle2_rapidity = 0
-    left_score = 0
-    right_score = 0
 
 
 class Color:
@@ -31,6 +27,19 @@ class Paddle:
         self.score = 0
         self.key_up = pygame.K_UP
         self.key_down = pygame.K_DOWN
+        self.rapidity = 0
+
+
+class Game:
+    def __init__(self):
+        self.settings = Settings()
+        self.color = Color()
+        self.screen = pygame.display.set_mode((self.settings.WIDTH, self.settings.HEIGHT))
+        self.ball_pos = [(self.settings.WIDTH / 2), (self.settings.HEIGHT / 2)]
+        self.horz = 0
+        self.vert = 0
+        self.ball_rapidity = [0, 0]
+        self.paddles = []
 
 
 pygame.init()
