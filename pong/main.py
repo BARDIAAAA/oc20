@@ -41,6 +41,16 @@ class Game:
         self.ball_rapidity = [0, 0]
         self.paddles = []
 
+    def init(self):
+        paddle = Paddle()
+        paddle.position = [self.settings.HALF_PAD_WIDTH - 1, self.settings.HEIGHT / 2]
+        paddle.key_up = pygame.K_w
+        paddle.key_down = pygame.K_s
+        self.paddles.append(paddle)
+        paddle = Paddle()
+        paddle.position = [self.settings.WIDTH + 1 - self.settings.HALF_PAD_WIDTH, self.settings.HEIGHT / 2]
+        self.paddles.append(paddle)
+
 
 pygame.init()
 pygame.display.set_caption("Pong!")
