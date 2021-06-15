@@ -1,4 +1,6 @@
 import pygame
+import random
+import sys
 
 
 class Settings:
@@ -14,10 +16,10 @@ class Settings:
 
 class Color:
     def __init__(self):
-        WHITE = (255, 255, 255)
-        RED = (255, 0, 0),
-        BLACK = (0, 0, 0),
-        BLUE = (65, 105, 225)
+        self.WHITE = (255, 255, 255)
+        self.RED = (255, 0, 0),
+        self.BLACK = (0, 0, 0),
+        self.BLUE = (65, 105, 225)
 
 
 class Paddle:
@@ -41,6 +43,18 @@ class Game:
         self.ball_rapidity = [0, 0]
         self.paddles = []
 
+    def ball_start(self, right):
+        self.horz = random.randrange(2, 4)
+        self.vert = random.randrange(1, 3)
+
+        if not right:
+            self.horz = -self.horz
+
+        self.ball_rapidity = [self.horz, -self.vert]
+
+    def show(self):
+        self.screen.fill(self.color.BLACK)
+
     def init(self):
         paddle = Paddle()
         paddle.position = [self.settings.HALF_PAD_WIDTH - 1, self.settings.HEIGHT / 2]
@@ -50,7 +64,23 @@ class Game:
         paddle = Paddle()
         paddle.position = [self.settings.WIDTH + 1 - self.settings.HALF_PAD_WIDTH, self.settings.HEIGHT / 2]
         self.paddles.append(paddle)
+        if random.randrange(0, 2) == 0:
+            self.ball_start(True)
+        else:
+            self.ball_start(False)
+
 
 
 pygame.init()
 pygame.display.set_caption("Pong!")
+game = Game()
+game.init()
+game.show()
+
+while True:
+
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            sys.exit()
+    print("Pong !")
