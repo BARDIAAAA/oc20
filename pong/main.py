@@ -60,7 +60,11 @@ class Game:
         pygame.draw.circle(self.screen, self.color.WHITE, [self.settings.WIDTH / 2, self.settings.HEIGHT / 2], 70, 1)
         pygame.draw.circle(self.screen, self.color.WHITE, self.ball_pos, 20, 0)
         for paddle in self.paddles:
-            pygame.draw.polygon(self.screen, paddle.color,  [[paddle.position[0] - self.settings.HALF_PAD_WIDTH, paddle.position[1] - self.settings.HALF_PAD_HEIGHT], [paddle.position[0] - self.settings.HALF_PAD_WIDTH, paddle.position[1] + self.settings.HALF_PAD_HEIGHT], [paddle.position[0] + self.settings.HALF_PAD_WIDTH, paddle.position[1] + self.settings.HALF_PAD_HEIGHT], [paddle.position[0] + self.settings.HALF_PAD_WIDTH, paddle.position[1] - self.settings.HALF_PAD_HEIGHT]], 0)
+            pygame.draw.polygon(self.screen, paddle.color,
+                                [[paddle.position[0] - self.settings.HALF_PAD_WIDTH, paddle.position[1] - self.settings.HALF_PAD_HEIGHT],
+                                 [paddle.position[0] - self.settings.HALF_PAD_WIDTH, paddle.position[1] + self.settings.HALF_PAD_HEIGHT],
+                                 [paddle.position[0] + self.settings.HALF_PAD_WIDTH, paddle.position[1] + self.settings.HALF_PAD_HEIGHT],
+                                 [paddle.position[0] + self.settings.HALF_PAD_WIDTH, paddle.position[1] - self.settings.HALF_PAD_HEIGHT]], 0)
 
     def init(self):
         paddle = Paddle()
