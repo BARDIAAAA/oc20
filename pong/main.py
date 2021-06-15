@@ -17,9 +17,10 @@ class Settings:
 class Color:
     def __init__(self):
         self.WHITE = (255, 255, 255)
-        self.RED = (255, 0, 0),
+        self.RED = (200, 0, 0),
         self.BLACK = (0, 0, 0),
         self.BLUE = (65, 105, 225)
+        self.GREEN = (0, 120, 75)
 
 
 class Paddle:
@@ -27,6 +28,7 @@ class Paddle:
         self.position = [0, 0]
         self.score_position = [0, 0]
         self.score = 0
+        self.color = Color().BLACK
         self.key_up = pygame.K_UP
         self.key_down = pygame.K_DOWN
         self.rapidity = 0
@@ -53,16 +55,23 @@ class Game:
         self.ball_rapidity = [self.horz, -self.vert]
 
     def show(self):
-        self.screen.fill(self.color.BLACK)
+        self.screen.fill(self.color.GREEN)
+        pygame.draw.line(self.screen, self.color.WHITE, [self.settings.WIDTH / 2, 0], [self.settings.WIDTH / 2, self.settings.HEIGHT], 1)
+        pygame.draw.circle(self.screen, self.color.WHITE, [self.settings.WIDTH / 2, self.settings.HEIGHT / 2], 70, 1)
+        pygame.draw.circle(self.screen, self.color.WHITE, self.ball_pos, 20, 0)
+        for paddle in self.paddles:
+            pygame.draw.polygon(self.screen, paddle.color,  [[paddle.position[0] - self.settings.HALF_PAD_WIDTH, paddle.position[1] - self.settings.HALF_PAD_HEIGHT], [paddle.position[0] - self.settings.HALF_PAD_WIDTH, paddle.position[1] + self.settings.HALF_PAD_HEIGHT], [paddle.position[0] + self.settings.HALF_PAD_WIDTH, paddle.position[1] + self.settings.HALF_PAD_HEIGHT], [paddle.position[0] + self.settings.HALF_PAD_WIDTH, paddle.position[1] - self.settings.HALF_PAD_HEIGHT]], 0)
 
     def init(self):
         paddle = Paddle()
-        paddle.position = [self.settings.HALF_PAD_WIDTH - 1, self.settings.HEIGHT / 2]
+        paddle.position = [self.settings.HALF_PAD_WIDTH, self.settings.HEIGHT / 2]
         paddle.key_up = pygame.K_w
         paddle.key_down = pygame.K_s
+        paddle.color = self.color.BLUE
         self.paddles.append(paddle)
         paddle = Paddle()
-        paddle.position = [self.settings.WIDTH + 1 - self.settings.HALF_PAD_WIDTH, self.settings.HEIGHT / 2]
+        paddle.position = [self.settings.WIDTH - self.settings.HALF_PAD_WIDTH, self.settings.HEIGHT / 2]
+        paddle.color = self.color.RED
         self.paddles.append(paddle)
         if random.randrange(0, 2) == 0:
             self.ball_start(True)
@@ -70,9 +79,8 @@ class Game:
             self.ball_start(False)
 
 
-
 pygame.init()
-pygame.display.set_caption("Pong!")
+pygame.display.set_caption("Pong !")
 game = Game()
 game.init()
 game.show()
@@ -83,4 +91,4 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-    print("Pong !")
+    pygame.display.update()
