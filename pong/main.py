@@ -130,7 +130,7 @@ class Game:
                 self.ball_start(False)
 
             # Fin de partie, lorsque une des personnes est arrivée à 5 points.
-            if pad.score == 1:
+            if pad.score == 5:
                 font = pygame.font.SysFont("Georgia Pro", 75, False, False)
                 text = font.render("Victoire !", True, pad.color)
                 self.screen.blit(text, (380, 80))
