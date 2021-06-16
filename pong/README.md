@@ -26,8 +26,8 @@
 
 ![](resources/images/diag.png)
 
-## Amélioration possible sur le Pac-Man
-*Aucune amélioration n'est à prévoir si le jeu à l'état actuel vous convient. Mais vous pouvez par exemple ajouter 2 raquettes pour que les parties soient du 2v2. Vous pouvez également ajouter une balle supplémentaire qui permettrait de donner encore plus de challenge au jeu. Ce sont des améliorations que vous pouvez apportez pour rendre le jeu encore plus complet mais le jeu à l'état actuel est déjà amplement suffisant.
+## Amélioration possible
+*Aucune amélioration n'est à prévoir si le jeu à l'état actuel vous convient. Mais vous pouvez par exemple ajouter 2 raquettes pour que les parties soient du 2v2. Vous pouvez également ajouter une balle supplémentaire qui permettrait de donner encore plus de challenge au jeu. Ce sont des améliorations que vous pouvez apportez pour rendre le jeu encore plus complet mais le jeu à l'état actuel est déjà amplement suffisant.*
 
 ## Cheminement
 **[1]** *Parlons du commencement, j'ai tout d'abord commencé par créer les classes les plus simples et les plus logiques qui sont les classes "Color" et "Path", ce qui m'a permis d'ajouter les entités que je voulais, en pensant aussi à mettre la bonne taille à mon écran, qui saura correspondre à la map.*
