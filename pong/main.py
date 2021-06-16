@@ -90,6 +90,13 @@ class Game:
             text = font.render(str(pad.score), True, pad.color)
             self.screen.blit(text, pad.score_position)
 
+            # Mouvement de la balle
+            self.ball.position[0] += self.ball.rapidity[0]
+            self.ball.position[1] += self.ball.rapidity[1]
+            if self.ball.position[1] <= self.settings.BALL_RADIUS:
+                self.ball.rapidity[1] = - self.ball.rapidity[1]
+            if self.ball.position[1] >= self.settings.HEIGHT + 1 - self.settings.BALL_RADIUS:
+                self.ball.rapidity[1] = -self.ball.rapidity[1]
 
     def init(self):
         pad1 = Paddle()
