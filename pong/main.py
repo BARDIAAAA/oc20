@@ -93,7 +93,7 @@ class Game:
             # Faire bouger les paddles
             if self.settings.HALF_PAD_HEIGHT < pad.position[1] < self.settings.HEIGHT - self.settings.HALF_PAD_HEIGHT:
                 pad.position[1] += pad.rapidity
-            elif pad.position[1] == self.settings.HALF_PAD_HEIGHT and paddle.rapidity > 0:
+            elif pad.position[1] == self.settings.HALF_PAD_HEIGHT and pad.rapidity > 0:
                 pad.position[1] += pad.rapidity
             elif pad.position[1] == self.settings.HEIGHT - self.settings.HALF_PAD_HEIGHT and pad.rapidity < 0:
                 pad.position[1] += pad.rapidity
