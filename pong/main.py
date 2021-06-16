@@ -71,8 +71,8 @@ class Game:
     def show(self):
         self.screen.fill(self.color.BLACK)
 
-        pygame.draw.line(self.screen, self.color.WHITE, [150, 350], [460, 350], 1)  # Ligne horizontale Gauche (A, B, épaisseur)
-        pygame.draw.line(self.screen, self.color.WHITE, [540, 350], [850, 350], 1)  # Ligne horizontale Droite
+        pygame.draw.line(self.screen, self.color.WHITE, [500, 0], [500, 310], 1)  # Ligne verticale haute (A, B, épaisseur)
+        pygame.draw.line(self.screen, self.color.WHITE, [500, 390], [500, 700], 1)  # Ligne verticale basse
 
         pygame.draw.circle(self.screen, self.color.WHITE, [500, 350], 40, 1)  # Cercle du milieu (C1, C2, rayon, épaisseur)
         pygame.draw.circle(self.screen, self.color.WHITE, [1000, 350], 150, 2)  # Cercle de droite
@@ -142,6 +142,8 @@ class Game:
                 self.screen.blit(text, (400, 200))
                 self.ball = Ball()
                 self.pause = True
+                pygame.draw.line(self.screen, self.color.BLACK, [500, 0], [500, 310], 1)  # Disparition de la ligne blanche haut
+                pygame.draw.line(self.screen, self.color.BLACK, [500, 390], [500, 700], 1)  # Disparition de la ligne blanche basse
 
     def init(self):
         pad1 = Paddle()
