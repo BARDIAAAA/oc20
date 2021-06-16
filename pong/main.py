@@ -130,7 +130,7 @@ class Game:
                 self.ball_start(False)
 
             # Fin de partie, lorsque une des personnes est arrivée à 5 points.
-            if pad.score == 5:
+            if pad.score == 1:
                 font = pygame.font.SysFont("Georgia Pro", 75, False, False)
                 text = font.render("Victoire !", True, pad.color)
                 self.screen.blit(text, (380, 80))
@@ -142,8 +142,6 @@ class Game:
                 self.screen.blit(text, (400, 200))
                 self.ball = Ball()
                 self.pause = True
-                pygame.draw.line(self.screen, self.color.BLACK, [500, 0], [500, 310], 1)  # Disparition de la ligne blanche haut
-                pygame.draw.line(self.screen, self.color.BLACK, [500, 390], [500, 700], 1)  # Disparition de la ligne blanche basse
 
     def init(self):
         pad1 = Paddle()
@@ -188,6 +186,7 @@ while True:
                         paddle.rapidity = 0
                     if event.key == paddle.key_down:
                         paddle.rapidity = 0
+                        
             else:
                 if event.type == pygame.KEYDOWN:
                     if event.key == pygame.K_RETURN:
@@ -199,5 +198,6 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
+            
     fps.tick(60)
     pygame.display.update()
