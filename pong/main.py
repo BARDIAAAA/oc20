@@ -166,7 +166,7 @@ class Game:
 pygame.mixer.init()
 pygame.mixer.music.load('resources/music.mp3')
 pygame.mixer.music.play(-1)
-pygame.mixer.music.set_volume(0.1)
+pygame.mixer.music.set_volume(0.075)
 fps = pygame.time.Clock()
 pygame.init()
 pygame.display.set_caption("Pong !")
