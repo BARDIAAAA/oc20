@@ -128,7 +128,29 @@ game.init()
 while True:
     game.show()
     for event in pygame.event.get():
+        for paddle in game.paddles:
+            if not game.pause:
+                if event.type == pygame.KEYDOWN:
+                    if event.key == paddle.key_up:
+                        paddle.rapidity = -8
+                    if event.key == paddle.key_down:
+                        paddle.rapidity = 8
+                if event.type == pygame.KEYUP:
+                    if event.key == paddle.key_up:
+                        paddle.rapidity = 0
+                    if event.key == paddle.key_down:
+                        paddle.rapidity = 0
+            else:
+                if event.type == pygame.KEYDOWN:
+                    if event.key == pygame.K_RETURN:
+                        game = Game()
+                        game.init()
+                    if event.type == pygame.K_ESCAPE:
+                        print("Quitte")
+                        pygame.quit()
+                        sys.exit()
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
+
     pygame.display.update()
