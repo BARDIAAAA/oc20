@@ -118,6 +118,17 @@ class Game:
                 self.paddles[1].score += 1
                 self.ball_start(True)
 
+            hit_right_wall = self.ball.position[0] >= self.settings.WIDTH + 1 - self.settings.BALL_RADIUS - self.settings.PAD_WIDTH
+            hit_paddle_b = self.paddles[1].position[1] - self.settings.HALF_PAD_HEIGHT < self.ball.position[1] < self.paddles[1].position[1] + self.settings.HALF_PAD_HEIGHT
+
+            if hit_right_wall and hit_paddle_b:
+                self.ball.rapidity[0] = -self.ball.rapidity[0]
+                self.ball.rapidity[0] *= 1.2
+                self.ball.rapidity[1] *= 1.2
+            elif int(self.ball.position[0]) >= self.settings.WIDTH + 1 - self.settings.BALL_RADIUS - self.settings.PAD_WIDTH:
+                self.paddles[0].score += 1
+                self.ball_start(False)
+
     def init(self):
         pad1 = Paddle()
         pad1.position = [self.settings.HALF_PAD_WIDTH, self.settings.HEIGHT / 2]
