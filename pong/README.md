@@ -10,10 +10,8 @@
 
 * **W =** Monte la raquette bleue
 * **S =** Descend la raquette bleue
-
 * **Flèche du haut =** Monte la raquette rouge
 * **Flèche du bas =** Descend la raquette rouge
-
 * **ENTER =** Recommence une partie (À la fin d'une partie)
 * **ESC =** Quitte le jeu (À la fin d'une partie)
   
