@@ -90,6 +90,14 @@ class Game:
             text = font.render(str(pad.score), True, pad.color)
             self.screen.blit(text, pad.score_position)
 
+            # Faire bouger les paddles
+            if self.settings.HALF_PAD_HEIGHT < pad.position[1] < self.settings.HEIGHT - self.settings.HALF_PAD_HEIGHT:
+                pad.position[1] += pad.rapidity
+            elif pad.position[1] == self.settings.HALF_PAD_HEIGHT and paddle.rapidity > 0:
+                pad.position[1] += pad.rapidity
+            elif pad.position[1] == self.settings.HEIGHT - self.settings.HALF_PAD_HEIGHT and pad.rapidity < 0:
+                pad.position[1] += pad.rapidity
+
             # Mouvement de la balle
             self.ball.position[0] += self.ball.rapidity[0]
             self.ball.position[1] += self.ball.rapidity[1]
@@ -145,8 +153,7 @@ while True:
                     if event.key == pygame.K_RETURN:
                         game = Game()
                         game.init()
-                    if event.type == pygame.K_ESCAPE:
-                        print("Quitte")
+                    if event.key == pygame.K_ESCAPE:
                         pygame.quit()
                         sys.exit()
         if event.type == pygame.QUIT:
