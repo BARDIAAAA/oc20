@@ -129,6 +129,20 @@ class Game:
                 self.paddles[0].score += 1
                 self.ball_start(False)
 
+            # Fin de partie, lorsque une des personnes est arrivée à 5 points.
+            if pad.score == 5:
+                font = pygame.font.SysFont("Georgia Pro", 75, False, False)
+                text = font.render("Victoire !", True, pad.color)
+                self.screen.blit(text, (380, 80))
+                font = pygame.font.SysFont("Georgia Pro", 35, False, False)
+                text = font.render("Pour recommencer : ENTER", True, self.color.GRAY)
+                self.screen.blit(text, (310, 160))
+                font = pygame.font.SysFont("Georgia Pro", 35, False, False)
+                text = font.render("Pour quitter : ESC", True, self.color.GRAY)
+                self.screen.blit(text, (400, 200))
+                self.ball = Ball()
+                self.pause = True
+
     def init(self):
         pad1 = Paddle()
         pad1.position = [self.settings.HALF_PAD_WIDTH, self.settings.HEIGHT / 2]
@@ -151,6 +165,7 @@ class Game:
 # pygame.mixer.music.load('resources/music.mp3')
 # pygame.mixer.music.play(-1)
 # pygame.mixer.music.set_volume(0.1)
+fps = pygame.time.Clock()
 pygame.init()
 pygame.display.set_caption("Pong !")
 game = Game()
@@ -182,5 +197,5 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-
+    fps.tick(60)
     pygame.display.update()
