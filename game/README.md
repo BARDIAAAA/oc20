@@ -38,7 +38,7 @@
 ---
 
 ## Améliorations nécessaires
-*Le jeu a l'état actuel n'est pas encore "jouable". Il ne manque néanmoins pas beaucoup de choses à faire pour que le jeu soit fini. Il ne reste à rendre les murs "durs", et d'autres fonctions aussi mais étant donné que nous avons eu un problème au niveau des collisions des murs, nous avons décidé de ne pas continuer à développer le reste des choses à faire car le jeu n'aurait aucun réel "sens"*
+*Le jeu a l'état actuel n'est pas encore "jouable". Il ne reste à rendre les murs "durs", et d'autres fonctions aussi mais étant donné que nous avons eu un problème au niveau des collisions des murs, nous avons décidé de ne pas continuer à développer le reste des choses à faire car le jeu n'aurait aucun réel "sens"*
 
 ---
 
