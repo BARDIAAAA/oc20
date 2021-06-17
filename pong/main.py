@@ -81,12 +81,13 @@ class Game:
 
         for pad in self.paddles:  # Tous les paddles sont concernés, donc les deux paddles sont dessinés.
             pygame.draw.polygon(self.screen, pad.color,
-                                [[pad.position[0] - self.settings.HALF_PAD_WIDTH, pad.position[1] - self.settings.HALF_PAD_HEIGHT],  # Point 1 (Gauche bas)
-                                 [pad.position[0] - self.settings.HALF_PAD_WIDTH, pad.position[1] + self.settings.HALF_PAD_HEIGHT],  # Point 2 (Gauche haut)
-                                 [pad.position[0] + self.settings.HALF_PAD_WIDTH, pad.position[1] + self.settings.HALF_PAD_HEIGHT],  # Point 3 (Droite haut)
-                                 [pad.position[0] + self.settings.HALF_PAD_WIDTH, pad.position[1] - self.settings.HALF_PAD_HEIGHT]], 0)  # Point 4 (Droite bas)
+                                [[pad.position[0] - self.settings.HALF_PAD_WIDTH, pad.position[1] - self.settings.HALF_PAD_HEIGHT],  # Point 1 (Gauche haut)
+                                 [pad.position[0] - self.settings.HALF_PAD_WIDTH, pad.position[1] + self.settings.HALF_PAD_HEIGHT],  # Point 2 (Gauche bas)
+                                 [pad.position[0] + self.settings.HALF_PAD_WIDTH, pad.position[1] + self.settings.HALF_PAD_HEIGHT],  # Point 3 (Droite bas)
+                                 [pad.position[0] + self.settings.HALF_PAD_WIDTH, pad.position[1] - self.settings.HALF_PAD_HEIGHT]], 0)  # Point 4 (Droite haut)
 
-            font = pygame.font.SysFont("Georgia Pro", 50, False, False)
+            # Score
+            font = pygame.font.SysFont("Georgia Pro", 50, True, False) # police ("police", taille, gras, italique)
             text = font.render(str(pad.score), True, pad.color)
             self.screen.blit(text, pad.score_position)
 
@@ -102,7 +103,7 @@ class Game:
             self.ball.position[0] += self.ball.rapidity[0]
             self.ball.position[1] += self.ball.rapidity[1]
             if self.ball.position[1] <= self.settings.BALL_RADIUS:
-                self.ball.rapidity[1] = - self.ball.rapidity[1]
+                self.ball.rapidity[1] = -self.ball.rapidity[1]
             if self.ball.position[1] >= self.settings.HEIGHT + 1 - self.settings.BALL_RADIUS:
                 self.ball.rapidity[1] = -self.ball.rapidity[1]
 
@@ -112,8 +113,8 @@ class Game:
 
             if hit_left_wall and hit_paddle_a:
                 self.ball.rapidity[0] = -self.ball.rapidity[0]
-                self.ball.rapidity[0] *= 1.2
-                self.ball.rapidity[1] *= 1.2
+                self.ball.rapidity[0] *= 1.15
+                self.ball.rapidity[1] *= 1.15
             elif self.ball.position[0] <= self.settings.BALL_RADIUS + self.settings.PAD_WIDTH:
                 self.paddles[1].score += 1
                 self.ball_start(True)
@@ -123,8 +124,8 @@ class Game:
 
             if hit_right_wall and hit_paddle_b:
                 self.ball.rapidity[0] = -self.ball.rapidity[0]
-                self.ball.rapidity[0] *= 1.2
-                self.ball.rapidity[1] *= 1.2
+                self.ball.rapidity[0] *= 1.15
+                self.ball.rapidity[1] *= 1.15
             elif int(self.ball.position[0]) >= self.settings.WIDTH + 1 - self.settings.BALL_RADIUS - self.settings.PAD_WIDTH:
                 self.paddles[0].score += 1
                 self.ball_start(False)
