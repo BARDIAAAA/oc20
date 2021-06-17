@@ -39,11 +39,12 @@ class Paddle:
         self.rapidity = 0
 
 
+# Création de la classe "Balle" qui va contenir les attributs de celle-ci.
 class Ball:
     def __init__(self):
         self.settings = Settings()
-        self.position = [(self.settings.WIDTH / 2), (self.settings.HEIGHT / 2)]
-        self.rapidity = [0, 0]
+        self.position = [(self.settings.WIDTH / 2), (self.settings.HEIGHT / 2)] # Lieu de spawn de la balle
+        self.rapidity = [0, 0] # Rapidité par défaut de la balle
 
 
 # Création de la classe "Game" qui va lancer le jeu.
@@ -52,7 +53,7 @@ class Game:
         self.settings = Settings()
         self.color = Color()
         self.ball = Ball()
-        self.screen = pygame.display.set_mode((self.settings.WIDTH, self.settings.HEIGHT))
+        self.screen = pygame.display.set_mode((self.settings.WIDTH, self.settings.HEIGHT)) # Taille de l'écran
         self.horz = 0
         self.vert = 0
         self.paddles = []
@@ -60,10 +61,10 @@ class Game:
 
     def ball_start(self, right):
         self.ball = Ball()
-        self.horz = random.randrange(2, 4)
+        self.horz = random.randrange(2, 4) # Départ random de la balle, horizontale et verticale
         self.vert = random.randrange(1, 3)
 
-        if not right:
+        if not right: # Si à gauche, vecteur horizontale inversé (contraire)
             self.horz = -self.horz
 
         self.ball.rapidity = [self.horz, -self.vert]
@@ -125,7 +126,7 @@ class Game:
             if hit_right_wall and hit_paddle_b:
                 self.ball.rapidity[0] = -self.ball.rapidity[0]
                 self.ball.rapidity[0] *= 1.15
-                self.ball.rapidity[1] *= 1.15
+                self.ball.rapidity [1] *= 1.15
             elif int(self.ball.position[0]) >= self.settings.WIDTH + 1 - self.settings.BALL_RADIUS - self.settings.PAD_WIDTH:
                 self.paddles[0].score += 1
                 self.ball_start(False)
@@ -147,17 +148,17 @@ class Game:
 
     def init(self):
         pad1 = Paddle()
-        pad1.position = [self.settings.HALF_PAD_WIDTH, self.settings.HEIGHT / 2]
-        pad1.key_up = pygame.K_w
-        pad1.key_down = pygame.K_s
-        pad1.color = self.color.BLUE
-        pad1.score_position = ((self.settings.WIDTH / 2) - 40, 5)
-        self.paddles.append(pad1)
+        pad1.position = [self.settings.HALF_PAD_WIDTH, self.settings.HEIGHT / 2] # Centre paddle bleu
+        pad1.key_up = pygame.K_w # Mouvement monter
+        pad1.key_down = pygame.K_s # Mouvement descendre
+        pad1.color = self.color.BLUE # Couleur
+        pad1.score_position = ((self.settings.WIDTH / 2) - 40, 5) # Position score
+        self.paddles.append(pad1) # Tout ce qui vient d'avant concerne le paddle bleu (gauche)
         pad2 = Paddle()
-        pad2.position = [self.settings.WIDTH - self.settings.HALF_PAD_WIDTH, self.settings.HEIGHT / 2]
-        pad2.color = self.color.RED
-        pad2.score_position = ((self.settings.WIDTH / 2) + 14, 5)
-        self.paddles.append(pad2)
+        pad2.position = [self.settings.WIDTH - self.settings.HALF_PAD_WIDTH, self.settings.HEIGHT / 2] # Centre paddle rouge
+        pad2.color = self.color.RED # Couleur
+        pad2.score_position = ((self.settings.WIDTH / 2) + 14, 5) # Position score
+        self.paddles.append(pad2) # Tout ce qui vient d'avant concerne le paddle rouge (droite)
         if random.randrange(0, 2) == 0:
             self.ball_start(True)
         else:
