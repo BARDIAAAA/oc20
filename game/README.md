@@ -30,7 +30,8 @@
 ![](resources/images/diag.png)
 
 ## Améliorations nécessaires
-*Le jeu a l'état actuel n'est pas encore "jouable". Il ne manque néanmoins pas beaucoup de choses à faire pour que le jeu soit fini. Il ne reste à rendre les murs "durs".*
+*Le jeu a l'état actuel n'est pas encore "jouable". Il ne manque néanmoins pas beaucoup de choses à faire pour que le jeu soit fini. Il ne reste à rendre les murs "durs", et d'autres fonctions aussi mais étant donné que nous avons eu un problème au niveau des collisions des murs, nous avons décidé de ne pas continuer à développer le reste des choses à faire car le jeu n'aurait aucun réel "sens"*
+
 ## Cheminement
 **[1]** *Pour commencer, j'ai tout d'abord commencé par créer les classes les plus simples et les plus générales qui sont les classes "Color" et "Path", ce qui m'a permis d'ajouter les entités que je voulais, ainsique de régler la taille de la fenêtre, qui saura correspondre à la map.*
 
