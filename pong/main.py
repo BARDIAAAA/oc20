@@ -163,7 +163,7 @@ class Game:
             self.ball_start(False)
 
 pygame.mixer.init()
-pygame.mixer.music.load('music.mp3')
+pygame.mixer.music.load('resources/music.mp3')
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(0.05)
 fps = pygame.time.Clock()
