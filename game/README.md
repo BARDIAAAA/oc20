@@ -9,8 +9,12 @@
 * **6.** [Sources](##Sources)
 * **7.** [Collaboration](##Collaboration)
 
+---
+
 ## But du jeu
 *Notre jeu est extrêmement connu dans le monde de l'arcade, c'est l'un des jeux les plus connus au monde. Il existe depuis 1980 ([Wikipédia Pac-Man](https://fr.wikipedia.org/wiki/Pac-Man)), ce qui fait de lui un jeu très ancien. Vous connaissez très certainement le principe du jeu mais nous allons très rapidement le ré-expliquer. Le héros du jeu s'appel "Pac-Man" et son but est de manger toutes les petites boules disposées sur l'ensemble de la surface de la map, mais une équipe de 4 fantômes de couleurs différentes feront en sorte d'empêcher Pac-Man de manger l'entièreté des boules, et donc, lui faire perdre la partie.*
+
+---
 
 ## Comment jouer ?
 *Suite à un problème de collision entre les personnages et les murs, le jeu n'est actuellement pas jouable, mais pour vous donner une idée générale de ce que le jeu aura comme allure, nous allons expliquer comment celui-ci se jouera. Pour jouer au jeu, vous devrez utiliser les quatres flèches directionnelles de votre clavier pour faire bouger Pac-Man. La flèche du haut le fait monter, celle du bas le fait descendre, celle de gauche le fait tourner à gauche et celle de droite le fait tourner à droite. Dans le cas où vous gagniez la partie ou que vous la perdiez, deux possibilités s'offrent à vous, soit de refaire une partie en appuyant sur "ENTER", soit de quitter le jeu en appuyant sur "ESC". Nous vous proposons également d'écouter la musique en lien avec le jeu, celle-ci est de base présente à l'écoute des joueurs. Pour la désactiver, il vous suffit juste d'appuyer sur "O" et vous verrez donc en-dessous que la musique est en "ON" ou en "OFF".*
@@ -18,6 +22,8 @@
 ![](resources/images/apercu.png)
 
 *Voici un aperçu de notre jeu à l'état actuel, il reste encore beaucoup de choses à faire mais la base est là (Map sur mesure), je vous invite à descendre sous la catégorie "Cheminement" pour voir les étapes du projet.*
+
+---
 
 ## Les classes (structure interne de notre jeu)
 * ***Paths :** classe où se trouvent toutes les images nécessaires au bon fonctionnement du jeu (Fantômes / Pac-Man), mais également la police et la musique.*
@@ -29,8 +35,12 @@
 
 ![](resources/images/diag.png)
 
+---
+
 ## Améliorations nécessaires
 *Le jeu a l'état actuel n'est pas encore "jouable". Il ne manque néanmoins pas beaucoup de choses à faire pour que le jeu soit fini. Il ne reste à rendre les murs "durs", et d'autres fonctions aussi mais étant donné que nous avons eu un problème au niveau des collisions des murs, nous avons décidé de ne pas continuer à développer le reste des choses à faire car le jeu n'aurait aucun réel "sens"*
+
+---
 
 ## Cheminement
 **[1]** *Pour commencer, j'ai tout d'abord commencé par créer les classes les plus simples et les plus générales qui sont les classes "Color" et "Path", ce qui m'a permis d'ajouter les entités que je voulais, ainsique de régler la taille de la fenêtre, qui saura correspondre à la map.*
@@ -40,6 +50,8 @@
 **[3]** *La troisième étape consistait à ajouter les lieux d'apparition des différentes entitées (Fantômes & Pac-Man). Les fantômes apparaissent dans leur petite cage 2 par 2 et Pac-Man apparait en bas de la map.*
 
 **[4]** *La suite du programme n'a malheureusement pas pu être faite, en raison des difficultés rencontrées et du manque de temps.*
+
+---
 
 ## Sources 
 *Pour les sources utilisées, elles sont classées dans différentes catégories nommées ci-dessous car je n'ai pas utilisé un Tutoriel à part entière mais un ensemble de sources différentes qui m'ont permis d'arriver à mon résultat final.*
@@ -63,6 +75,8 @@
 * **[Images] :**
 
 *Les entités utilisées par notre jeu nous ont été données à la suite de notre demande par un volontaire.*
+
+---
 
 ## Collaboration
 *Mon ami Léandro (Merci à lui), pour ce jeu, m'a aidé à coder les fonctions qui se situent entre le SetMoving et le SetY (dans la classe Hero), ce sont des fonctions qui ne sont actuellement pas utilisées mais elles le seront plus tard. Le reste du travail a été effectué par moi-même (Bardia).*
