@@ -39,7 +39,7 @@
 **[4]** *Pour cette dernière partie, nous nous sommes attardés sur la fin du jeu : l'affichage des fonctionnalités de fin (Victoire / Recommencer / Quitter / Limite jusqu'à 5 points).*
 
 ## Sources 
-*Pour les sources que nous avons utilisé, nous allons les classer dans différentes catégories que nous allons clairement très clairement ci-dessous.
+*Pour les sources que nous avons utilisé, nous allons les classer dans différentes catégories que nous allons clairement très clairement ci-dessous.*
 
 * **[Recherche & Compréhension pour "Pong"] :**
 
@@ -68,4 +68,4 @@
       https://www.kissclipart.com/ping-pong-racquet-sport-logo-racket-clip-art-nktr81/
 
 ## Collaboration
-L'ensemble du code a été fait par nous-même mais comme stipulé dans les sources ci-dessus, nous avons utilisé, pour la partie des collisions, un code pré-existant qui nous a servit de "tutoriel".
+*L'ensemble du code a été fait par nous-même mais comme stipulé dans les sources ci-dessus, nous avons utilisé, pour la partie des collisions, un code pré-existant qui nous a servit de "tutoriel".*
