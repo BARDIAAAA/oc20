@@ -71,8 +71,8 @@ class Game:
     def show(self):
         self.screen.fill(self.color.BLACK)
 
-        pygame.draw.line(self.screen, self.color.WHITE, [150, 350], [460, 350], 1)  # Ligne verticale haute (A, B, épaisseur)
-        pygame.draw.line(self.screen, self.color.WHITE, [540, 350], [850, 350], 1)  # Ligne verticale basse
+        pygame.draw.line(self.screen, self.color.WHITE, [150, 350], [460, 350], 1)  # Ligne horizontale gauche (A, B, épaisseur)
+        pygame.draw.line(self.screen, self.color.WHITE, [540, 350], [850, 350], 1)  # Ligne horizontale droite
 
         pygame.draw.circle(self.screen, self.color.WHITE, [500, 350], 40, 1)  # Cercle du milieu (C1, C2, rayon, épaisseur)
         pygame.draw.circle(self.screen, self.color.WHITE, [1000, 350], 150, 2)  # Cercle de droite
