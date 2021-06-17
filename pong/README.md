@@ -3,10 +3,8 @@
 ## But du jeu
 *Le tennis de table, plus fréquemment appelé "Ping-Pong" est un jeu olympique créé pour la première fois en 1890 par David Foster. Ce jeu est a seulement rejoins les sports olympiques en 1988 lors des JO de Séoul ([L'histoire du tennis de table](https://fr.cornilleau.com/content/55-lhistoire-du-tennis-de-table)). Vous le connaissez très certainement tous car c'est un jeu qui est très souvent joué en été lors des après-midi passés à la piscine ou juste chez un de vos amis. Le jeu consiste à donner une raquette à deux personnes qui vont devoir s'affronter. Ces deux personnes vont devoir, via leur raquette, tapper sur une balle et tenter de ne pas laisser la chance à l'adversaire de répondre.*
 
-![](resources/readme/1988.jpg)
-
 <p align="center">
-  <img width="460" height="300" src=http://www.collectionscanada.gc.ca/obj/001064/f1/0511ng-pintea5-v6.jpg>
+  <img width="650" height="500" src=http://www.collectionscanada.gc.ca/obj/001064/f1/0511ng-pintea5-v6.jpg>
 </p>
 
 ## Comment jouer ?
@@ -74,6 +72,10 @@
 * **[Ping-Pong 1988] :**
 
       https://www.collectionscanada.gc.ca/base-de-donnees/olympiens/001064-119.01-f.php?&photo_id_nbr=5185&brws_s=1&&PHPSESSID=dlbghk3a8459b5l4vpsjt2nhv0
+
+* **[Aligner des images sur un README] :**
+
+      https://gist.github.com/DavidWells/7d2e0e1bc78f4ac59a123ddf8b74932d
 
 ## Collaboration
 *L'ensemble du code a été fait par nous-même mais comme stipulé dans les sources ci-dessus, nous avons utilisé, pour la partie des collisions, un code pré-existant qui nous a servit de "tutoriel".*
