@@ -7,6 +7,7 @@
 * **4.** [Améliorations possibles](##Améliorationspossibles)
 * **5.** [Cheminement](##Cheminement)
 * **6.** [Sources](##Sources)
+* **7.** [Collaboration](##Collaboration)
 
 
 ## But du jeu
