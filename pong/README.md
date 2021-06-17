@@ -38,7 +38,7 @@
 
 ---
 
-## Les classes (structure interne de notre jeu)
+## Les classes (structure interne de notre jeu) 
 * ***Settings :*** *classe où se trouvent toutes les valeurs par défaut (Longeur, hauteur, rayon de la balle, et d'autres).*
 * ***Color :*** *classe où se trouvent toutes les couleurs dont nous aurons besoin, classe très basique.*
 * ***Paddle :*** *classe qui va comprendre les caractéristiques par défaut des paddles (les touches pour monter et descendre, le score de base, et d'autres).*
@@ -51,7 +51,7 @@
 
 ---
 
-## Améliorations possibles
+## Améliorations possibles <a name="améliorations possibles"></a>
 *Aucune amélioration n'est à prévoir si le jeu à l'état actuel vous convient. Mais vous pouvez par exemple ajouter 2 raquettes pour que les parties soient du 2v2. Vous pouvez également ajouter une balle supplémentaire qui permettrait de donner encore plus de challenge au jeu. Ce sont des améliorations que vous pouvez apportez pour rendre le jeu encore plus complet mais le jeu à l'état actuel est déjà amplement suffisant.*
 
 ---
