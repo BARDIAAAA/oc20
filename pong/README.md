@@ -1,7 +1,12 @@
 # Projet Pong
 
 ## Table des matières
-1. [But du jeu](##Butdujeu)
+* **1.** [But du jeu](##Butdujeu)
+* **2.** [Comment jouer ?](##Commentjouer?)
+* **3.** [Les classes (structure interne de notre jeu)](##Lesclasses(structureinternedenotrejeu))
+* **4.** [Améliorations possibles](##Améliorationspossibles)
+* **5.** [Cheminement](##Cheminement)
+* **6.** [Sources](##Sources)
 
 
 ## But du jeu
@@ -46,7 +51,7 @@
 
 ---
 
-## Amélioration possible
+## Améliorations possibles
 *Aucune amélioration n'est à prévoir si le jeu à l'état actuel vous convient. Mais vous pouvez par exemple ajouter 2 raquettes pour que les parties soient du 2v2. Vous pouvez également ajouter une balle supplémentaire qui permettrait de donner encore plus de challenge au jeu. Ce sont des améliorations que vous pouvez apportez pour rendre le jeu encore plus complet mais le jeu à l'état actuel est déjà amplement suffisant.*
 
 ---
