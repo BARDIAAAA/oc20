@@ -142,6 +142,10 @@ class Game:
                 self.screen.blit(text, (400, 200))
                 self.ball = Ball()
                 self.pause = True
+            
+            if self.ball.position[0]<=self.settings.PAD_WIDTH:
+                bouncesd.play()
+                
 
     def init(self):
         pad1 = Paddle()
@@ -165,10 +169,11 @@ pygame.mixer.init()
 pygame.mixer.music.load('resources/music.mp3')
 pygame.mixer.music.play(-1)
 pygame.mixer.music.set_volume(0.05)
+bouncesd = mixer.Sound('bounce.mp3')
 fps = pygame.time.Clock()
 pygame.init()
 pygame.display.set_caption("Pong !")
-icon_32x32 = pygame.image.load("resources/pong3.png.")
+icon_32x32 = pygame.image.load("resources/icon.png")
 pygame.display.set_icon(icon_32x32)
 game = Game()
 game.init()
