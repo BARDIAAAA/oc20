@@ -164,10 +164,12 @@ class Game:
 pygame.mixer.init()
 pygame.mixer.music.load('resources/music.mp3')
 pygame.mixer.music.play(-1)
-pygame.mixer.music.set_volume(0.075)
+pygame.mixer.music.set_volume(0.05)
 fps = pygame.time.Clock()
 pygame.init()
 pygame.display.set_caption("Pong !")
+icon_32x32 = pygame.image.load("resources/pong.png.")
+pygame.display.set_icon(icon_32x32)
 game = Game()
 game.init()
 
