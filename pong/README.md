@@ -6,7 +6,7 @@
 ![](resources/readme/1988.jpg)
 
 <p align="center">
-  <img width="460" height="300" src=(resources/readme/1988.jpg)>
+  <img width="460" height="300" src=http://www.collectionscanada.gc.ca/obj/001064/f1/0511ng-pintea5-v6.jpg>
 </p>
 
 ## Comment jouer ?
