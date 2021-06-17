@@ -5,6 +5,10 @@
 
 ![](resources/readme/1988.jpg)
 
+<p align="center">
+  <img width="460" height="300" src=(resources/readme/1988.jpg)>
+</p>
+
 ## Comment jouer ?
 *Pour jouer, c'est très simple. Il faut tout d'abord être deux pour profiter du jeu au maximum. Vous pouvez y jouer seul mais c'est toujours plus amusant d'avoir un partenaire avec qui rigoler. Sachant que les raquettes peuvent uniquement monter et descendre, vous devez les utiliser pour battre votre adversaire. La raquette bleue monte en appuyant sur la touche "W" et descend en appuyant sur la touche "S". Pour la raquette rouge, c'est les flèches qu'il faut utiliser. La flèche du haut la fait monter et la flèche du bas la fait descendre. La partie est terminée lorsqu'une des personnes arrive à 5 points. À partir de ce moment-là, vous aurez deux possibilités : soit de recommencer une partie en appuyant sur la touche "ENTER", soit de quitter le jeu en appuyant sur la touche "ESC".*
 
