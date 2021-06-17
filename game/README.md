@@ -1,5 +1,14 @@
 # Projet Pac-Man
 
+## Table des matières
+* **1.** [But du jeu](##Butdujeu)
+* **2.** [Comment jouer ?](##Commentjouer?)
+* **3.** [Les classes (structure interne de notre jeu)](##Lesclasses(structureinternedenotrejeu))
+* **4.** [Améliorations nécessaires](##Améliorationsnécessaires)
+* **5.** [Cheminement](##Cheminement)
+* **6.** [Sources](##Sources)
+* **7.** [Collaboration](##Collaboration)
+
 ## But du jeu
 *Notre jeu est extrêmement connu dans le monde de l'arcade, c'est l'un des jeux les plus connus au monde. Il existe depuis 1980 ([Wikipédia Pac-Man](https://fr.wikipedia.org/wiki/Pac-Man)), ce qui fait de lui un jeu très ancien. Vous connaissez très certainement le principe du jeu mais nous allons très rapidement le ré-expliquer. Le héros du jeu s'appel "Pac-Man" et son but est de manger toutes les petites boules disposées sur l'ensemble de la surface de la map, mais une équipe de 4 fantômes de couleurs différentes feront en sorte d'empêcher Pac-Man de manger l'entièreté des boules, et donc, lui faire perdre la partie.*
 
@@ -20,7 +29,7 @@
 
 ![](resources/images/diag.png)
 
-## Amélioration nécessaire sur le Pac-Man
+## Améliorations nécessaires
 *Le jeu a l'état actuel n'est pas encore "jouable". Il ne manque néanmoins pas beaucoup de choses à faire pour que le jeu soit fini. Il ne reste à rendre les murs "durs".*
 ## Cheminement
 **[1]** *Pour commencer, j'ai tout d'abord commencé par créer les classes les plus simples et les plus générales qui sont les classes "Color" et "Path", ce qui m'a permis d'ajouter les entités que je voulais, ainsique de régler la taille de la fenêtre, qui saura correspondre à la map.*
