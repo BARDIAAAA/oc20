@@ -183,9 +183,9 @@ while True:
             if not game.pause:
                 if event.type == pygame.KEYDOWN:
                     if event.key == paddle.key_up:
-                        paddle.rapidity = -8
+                        paddle.rapidity = -10
                     if event.key == paddle.key_down:
-                        paddle.rapidity = 8
+                        paddle.rapidity = 10
                 if event.type == pygame.KEYUP:
                     if event.key == paddle.key_up:
                         paddle.rapidity = 0
