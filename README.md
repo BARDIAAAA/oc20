@@ -1,7 +1,7 @@
 # Projet oc20 Info
 
 ## Présentation de l'interface de la page
-*Notre page Github est séparée selen différentes parties et c'est justement ce que nous allons voir ici pour vous donner des éclaircissement sur les différents dossiers composant la page. Pour que la présentation soit la plus optimale possible, nous allons vous présenter les différentes sections une par une et préciser à quoi elles servent et égalemment ce qu'elles contiennent. L'ordre suivi n'est pas alphabétique, mais suit les étapes de notre "formation" durant l'entièreté du deuxième semestre.*
+*Notre page Github est séparée selon différentes parties et c'est justement ce que nous allons voir ici pour vous donner des éclaircissement sur les différents dossiers composant la page. Pour que la présentation soit la plus optimale possible, nous allons vous présenter les différentes sections une par une et préciser à quoi elles servent et égalemment ce qu'elles contiennent. L'ordre suivi n'est pas alphabétique, mais suit les étapes de notre "formation" durant l'entièreté du deuxième semestre.*
 
 ### 1) Tutorial
 *Cette partie est la première section que nous avons utilisée car c'est justement elle qui comprend les nombreux exercices que nous avons fait pour nous familiariser avec pygame pour le bon fonctionnement de notre jeu. Dans ce dossier se trouvent 5 dossiers qui séparent les différents thèmes que nous avons vu dans le but d'être plus à l'aise avec le codage.*
