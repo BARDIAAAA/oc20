@@ -19,6 +19,10 @@
 * **ENTER =** Recommence une partie (À la fin d'une partie)
 * **ESC =** Quitte le jeu (À la fin d'une partie)
 
+<p align="center">
+  <img width="650" height="500" src=https://i.ibb.co/VQ0KsNs/visuel.png>
+</p>
+
 ## Les classes (structure interne de notre jeu)
 * ***Settings :*** *classe où se trouvent toutes les valeurs par défaut (Longeur, hauteur, rayon de la balle, et d'autres).*
 * ***Color :*** *classe où se trouvent toutes les couleurs dont nous aurons besoin, classe très basique.*
@@ -39,6 +43,10 @@
 **[3]** *Pour cette troisième étape, ce que nous avons en gros fait c'est d'ajouter les mouvements randoms de la balle, les mouvements des paddles, les collisions sur les différents murs. Ce qui nous permet de jouer au jeu.*
 
 **[4]** *Pour cette dernière partie, nous nous sommes attardés sur la fin du jeu : l'affichage des fonctionnalités de fin (Victoire / Recommencer / Quitter / Limite jusqu'à 5 points).*
+
+<p align="center">
+  <img width="650" height="500" src=https://i.ibb.co/WpFYFW3/victoire.png>
+</p>
 
 ## Sources 
 *Pour les sources que nous avons utilisé, nous allons les classer dans différentes catégories que nous allons clairement très clairement ci-dessous.*
