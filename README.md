@@ -7,7 +7,7 @@
 *Cette partie est la première section que nous avons utilisée car c'est justement elle qui comprend les nombreux exercices que nous avons fait pour nous familiariser avec pygame pour le bon fonctionnement de notre jeu. Dans ce dossier se trouvent 5 dossiers qui séparent les différents thèmes que nous avons vu dans le but d'être plus à l'aise avec le codage.*
 
 ### 2) Img
-*Cette deuxième partie n'est pas très riche en contenu car elle contient uniquement toutes les images que nous avons utilisé durant l'entièreté du projet, que ces images proviennent de l'éditeur ou des jeux en eux-même.*
+*Cette deuxième partie n'est pas très riche en contenu car elle contient uniquement toutes les images que nous avons utilisé durant l'entièreté du projet, que ces images proviennent de l'éditeur ou des jeux en eux-même. C'est un stock d'images*
 
 ### 3) Editor
 *Cette troisième partie est importante car elle nous a permis d'appliquer nos connaissances dans un cadre pratique. Lorsque l'on parle d'informatique, le meilleur exercice pour s'entraîner au codage est la pratique. Donc, avoir un exemple nous permettant de mettre en pratique nos connaissances ne pouvaient que nous aider pour la suite du projet.*
