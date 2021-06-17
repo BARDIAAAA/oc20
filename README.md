@@ -21,11 +21,10 @@
 * ***Un fichier "images" contenant les images que nous utilisons pour la catégorie "Game" (Pac-Man & Read.me).***
 * ***Un fichier "music" contenant la musique utilisée dans notre jeu pour le rendre plus sympathique.***
 
+*Cette quatrième catégorie contient un Read.me directement sur le fichier, ce qui permet de voir ce à quoi correspond le jeu vidéo, et les fonctionnalités qui y sont affiliées.*
+
 ### 5) Pong
-*Dans ce fichier on retrouve le deuxième jeu composant notre projet, un pong on y retrouve les documents suivants :*
-* ***Le fichier "ressources" contenant la musique utilisée.***
+*Dans ce fichier on retrouve le deuxième jeu composant notre projet, on y retrouve les documents suivants :*
+* ***Le fichier "resources" contenant la musique utilisée et l'icone choisie.***
 * ***Le document "README.md", un document expliquant le fonctionnement du jeu.***
 * ***Le document "main.py", contenant le code du jeu.***
-
-
-*Cette quatrième catégorie contient un Read.me directement sur le fichier, ce qui permet de voir ce à quoi correspond le jeu vidéo, et les fonctionnalités qui y sont affiliées.*
