@@ -51,7 +51,7 @@
 
 ---
 
-## Améliorations possibles <a name="améliorations possibles"></a>
+## Améliorations possibles
 *Aucune amélioration n'est à prévoir si le jeu à l'état actuel vous convient. Mais vous pouvez par exemple ajouter 2 raquettes pour que les parties soient du 2v2. Vous pouvez également ajouter une balle supplémentaire qui permettrait de donner encore plus de challenge au jeu. Ce sont des améliorations que vous pouvez apportez pour rendre le jeu encore plus complet mais le jeu à l'état actuel est déjà amplement suffisant.*
 
 ---
@@ -109,6 +109,10 @@
 * **[Aligner des images sur un README] :**
 
       https://gist.github.com/DavidWells/7d2e0e1bc78f4ac59a123ddf8b74932d
+      
+* **[Tutoriel : Table des matières] :**
+
+      https://webdevdesigner.com/q/markdown-to-create-pages-and-table-of-contents-27643/
 
 ---
 
