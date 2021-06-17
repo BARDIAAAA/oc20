@@ -67,5 +67,9 @@
 
       https://www.kissclipart.com/ping-pong-racquet-sport-logo-racket-clip-art-nktr81/
 
+* **[Ping-Pong 1988] :**
+
+      https://www.collectionscanada.gc.ca/base-de-donnees/olympiens/001064-119.01-f.php?&photo_id_nbr=5185&brws_s=1&&PHPSESSID=dlbghk3a8459b5l4vpsjt2nhv0
+
 ## Collaboration
 *L'ensemble du code a été fait par nous-même mais comme stipulé dans les sources ci-dessus, nous avons utilisé, pour la partie des collisions, un code pré-existant qui nous a servit de "tutoriel".*
