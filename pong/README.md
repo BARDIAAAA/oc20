@@ -9,6 +9,7 @@
 * **6.** [Sources](##Sources)
 * **7.** [Collaboration](##Collaboration)
 
+---
 
 ## But du jeu
 *Le tennis de table, plus fréquemment appelé "Ping-Pong" est un jeu olympique créé pour la première fois en 1890 par David Foster. Ce jeu est a seulement rejoins les sports olympiques en 1988 lors des JO de Séoul ([L'histoire du tennis de table](https://fr.cornilleau.com/content/55-lhistoire-du-tennis-de-table)). Vous le connaissez très certainement car c'est un jeu très populaire en été lors des après-midi passés à la piscine ou juste chez un de vos amis. Le jeu consiste à donner une raquette à deux personnes qui vont devoir s'affronter. Ces deux personnes vont devoir, via leur raquette, taper sur une balle et tenter de ne pas laisser la chance à l'adversaire de répondre.*
